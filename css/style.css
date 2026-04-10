@@ -373,7 +373,7 @@ ul { list-style: none; }
 .mini-card {
   background: var(--glass); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border); border-radius: var(--r);
-  padding: 18px; display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px; display: flex; align-items: flex-start; gap: 14px;
   transition: all 0.25s ease; cursor: pointer;
 }
 .mini-card:hover {
@@ -458,6 +458,79 @@ ul { list-style: none; }
 .footer-col a { font-size: 0.84rem; color: var(--muted); transition: color 0.2s; }
 .footer-col a:hover { color: var(--teal); }
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 24px; border-top: 1px solid var(--glass-border); font-size: 0.77rem; color: var(--muted); flex-wrap: wrap; gap: 8px; }
+
+/* ============================================================
+   PRODUCT THUMBNAILS & CLAWBOT
+============================================================ */
+.start-thumb {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid var(--glass-border);
+  display: block;
+  transition: transform 0.3s ease;
+}
+.start-card:hover .start-thumb { transform: scale(1.02); }
+
+.product-thumb {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.mini-thumb {
+  width: 90px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  flex-shrink: 0;
+}
+
+.guide-float-img {
+  width: 100%;
+  border-radius: var(--r-lg);
+  display: block;
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5), var(--glow-teal);
+  animation: float 4s ease-in-out infinite;
+}
+
+.product-openclaw { overflow: visible; position: relative; }
+
+.clawbot-wrap {
+  position: relative; height: 160px; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, rgba(20,184,166,0.06), rgba(14,165,233,0.06));
+  border-bottom: 1px solid var(--glass-border);
+}
+.clawbot-img {
+  width: 100%; height: 160px; object-fit: cover;
+  display: block;
+}
+.clawbot-pulse {
+  position: absolute; top: 50%; left: 50%;
+  width: 100px; height: 100px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(20,184,166,0.3);
+  animation: clawpulse 2s ease-in-out infinite;
+}
+@keyframes clawpulse {
+  0%   { transform: translate(-50%,-50%) scale(0.8); opacity: 0.8; }
+  100% { transform: translate(-50%,-50%) scale(1.8); opacity: 0; }
+}
+.clawbot-orb {
+  position: absolute; border-radius: 50%;
+  animation: orbit 4s linear infinite;
+}
+.clawbot-orb-1 { width: 8px; height: 8px; background: #14B8A6; top: 30%; right: 20%; animation-delay: 0s; }
+.clawbot-orb-2 { width: 6px; height: 6px; background: #0EA5E9; top: 65%; left: 15%; animation-delay: -1.5s; }
+.clawbot-orb-3 { width: 5px; height: 5px; background: #F97316; top: 20%; left: 25%; animation-delay: -3s; }
+@keyframes orbit {
+  0%,100% { transform: translateY(0) scale(1); opacity: 0.9; }
+  50%      { transform: translateY(-8px) scale(1.3); opacity: 0.5; }
+}
 
 /* ============================================================
    SCROLL REVEAL
