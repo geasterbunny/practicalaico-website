@@ -104,6 +104,7 @@ ul { list-style: none; }
   padding: 14px 28px; border-radius: 12px;
   font-family: var(--font); font-weight: 700; font-size: 0.95rem;
   cursor: pointer; border: none; transition: all 0.25s; white-space: nowrap;
+  position: relative; z-index: 1;
 }
 .btn-primary {
   background: var(--grad); color: var(--navy);
@@ -175,6 +176,7 @@ ul { list-style: none; }
 .hero-actions {
   display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
   margin-bottom: 64px; animation: fadeUp 0.7s 0.3s ease both;
+  padding-bottom: 4px;
 }
 .hero-stats {
   display: flex; align-items: center; gap: 40px; flex-wrap: wrap;
@@ -206,7 +208,11 @@ ul { list-style: none; }
   border: 1px solid var(--glass-border);
   box-shadow: 0 32px 80px rgba(0,0,0,0.6), var(--glow-teal);
 }
-.video-wrapper video { width: 100%; display: block; }
+.video-wrapper video {
+  width: 100%; display: block;
+  border-radius: 0;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
 .video-label {
   position: absolute; top: 16px; left: 16px;
   background: rgba(6,13,26,0.82); backdrop-filter: blur(12px);
