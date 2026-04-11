@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Practical AI Co. — Smarter Work, Less Effort</title>
+  <meta name="description" content="AI guides, tools and workflows for everyday professionals. Plain English, no jargon.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H9l-4 3v-3H4a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z" fill="rgba(6,13,26,0.5)" stroke="white" stroke-width="1.5"/><path d="M14 9l2 3 3 1.5-3 1.5-2 3-2-3-3-1.5 3-1.5z" fill="white"/></svg></div>
+      <span class="nav-brand">The Practical <em class="grad-text">AI</em> Co.</span>
+    </a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#products">Products</a></li>
+      <li><a href="#start-here">Start Here</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="https://payhip.com/b/7sNzw" target="_blank" class="nav-cta">Free Guide ↗</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-grid"></div>
+  <div class="container">
+    <div class="hero-badge"><span class="badge-pulse"></span>For professionals who work smarter, not harder</div>
+    <h1 class="hero-title">
+      <span class="line">AI is changing your workplace.</span>
+      <span class="line grad-text">Don't get left behind.</span>
+    </h1>
+    <p class="hero-sub">Plain-English guides and workflows that teach you to use AI tools at work — before your job description changes without you.</p>
+    <div class="hero-actions">
+      <a href="https://payhip.com/b/7sNzw" target="_blank" class="btn btn-primary">Get the Free Beginners Guide <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="#products" class="btn btn-glass">Browse All Products</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">11</span><span class="stat-label">Guides &amp; Packs</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">No-jargon</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">0</span><span class="stat-label">Coding required</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO INTRO — Frank video small, sound controls -->
+<section class="video-intro">
+  <div class="container video-intro-grid">
+    <div class="video-wrapper video-wrapper-sm reveal">
+      <video muted loop playsinline preload="auto" id="frankVideo">
+        <source src="/videos/frank.mp4" type="video/mp4">
+        <source src="videos/frank.mp4" type="video/mp4">
+      </video>
+      <div class="video-controls">
+        <button class="vid-play-btn" id="frankPlayBtn" onclick="toggleFrank()">▶</button>
+        <button class="vid-sound-btn" id="frankSoundBtn" onclick="toggleFrankSound()">🔇</button>
+      </div>
+      <div class="video-label">👋 Meet Us</div>
+    </div>
+    <div class="video-text reveal">
+      <div class="section-tag">WHO WE ARE</div>
+      <h2>AI made <span class="grad-text">practical</span> for everyday work.</h2>
+      <p>We're not here to talk about AI in theory. We show you exactly how to use it in the job you already have — emails, meeting notes, research, automation. No tech background needed.</p>
+      <a href="https://payhip.com/b/7sNzw" target="_blank" class="btn btn-primary">Start for Free ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEAR STRIP -->
+<div class="fear-strip">
+  <div class="fear-inner">
+    <div class="fear-item"><div class="fear-icon">⚡</div><span>AI is already inside your industry — whether you're using it or not</span></div>
+    <div class="fear-item"><div class="fear-icon">📉</div><span>Companies replace roles, not people who adapt and level up</span></div>
+    <div class="fear-item"><div class="fear-icon">🎯</div><span>5 minutes a day with the right guide puts you months ahead</span></div>
+  </div>
+</div>
+
+<!-- FREE GUIDE — full width thumb, no text above it -->
+<section class="free-section">
+  <div class="container">
+    <div class="free-inner">
+      <div class="free-text reveal">
+        <div class="free-tag">FREE DOWNLOAD</div>
+        <h2>Beginners Guide to Using<br>Common <span class="grad-text">AI Tools</span></h2>
+        <p>The fastest way to understand what AI tools actually do — and which ones to start with at work. Zero fluff. Instant download.</p>
+        <a href="https://payhip.com/b/7sNzw" target="_blank" class="btn btn-primary">Download Free Now ↗</a>
+      </div>
+      <a href="https://payhip.com/b/7sNzw" target="_blank" class="guide-float reveal">
+        <img src="images/thumb-beginners.svg" alt="Free Beginners Guide to AI Tools" class="guide-float-img">
+        <div class="guide-float-cta">Click to download free ↗</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- START HERE — thumbs ARE the full card buttons -->
+<section class="section" id="start-here">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">START HERE SERIES</div>
+      <h2 class="section-title">Pick your biggest work challenge.<br><span class="grad-text">Start there.</span></h2>
+      <p class="section-sub">A$5 each. Focused guides for the tasks you do every day.</p>
+    </div>
+    <div class="start-grid">
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="start-card reveal">
+        <div class="start-card-img"><img src="images/thumb-automation.svg" alt="Start Here: Automation"></div>
+        <div class="start-card-info"><h3>Automation</h3><p>Stop doing the same tasks manually. Let AI handle repetition.</p><div class="start-price">A$5.00</div></div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="start-card reveal">
+        <div class="start-card-img"><img src="images/thumb-chatbots.svg" alt="Start Here: Chatbots"></div>
+        <div class="start-card-info"><h3>Chatbots (LLMs)</h3><p>ChatGPT, Claude, Gemini — ready-to-use workflows for each.</p><div class="start-price">A$5.00</div></div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="start-card reveal">
+        <div class="start-card-img"><img src="images/thumb-writing.svg" alt="Start Here: Writing and Editing"></div>
+        <div class="start-card-info"><h3>Writing &amp; Editing</h3><p>Emails, reports, proposals — faster and better with AI.</p><div class="start-price">A$5.00</div></div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="start-card reveal">
+        <div class="start-card-img"><img src="images/thumb-meeting.svg" alt="Start Here: Meeting Notes"></div>
+        <div class="start-card-info"><h3>Meeting Notes</h3><p>AI summaries, actions, follow-ups. Never lose an insight.</p><div class="start-price">A$5.00</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS — thumbs are the full top of card -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">FEATURED PRODUCTS</div>
+      <h2 class="section-title">Go deeper.<br><span class="grad-text">Get real results.</span></h2>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <a href="https://payhip.com/b/xoBDP" target="_blank" class="product-thumb-link">
+          <div class="product-badge">🔥 Best Seller</div>
+          <img src="images/thumb-openclaw.svg" alt="OpenClaw Setup Pack" class="product-thumb">
+        </a>
+        <div class="product-content">
+          <h3>Open Claw Setup Pack</h3>
+          <p>Click-by-click guide to installing your first AI agent. Built for non-devs. One session to a working setup.</p>
+          <ul class="product-includes"><li>✓ Plain-English install walkthrough</li><li>✓ Connect to your tools &amp; channels</li><li>✓ Ready-to-copy prompts &amp; workflows</li><li>✓ Troubleshooting guide included</li></ul>
+          <div class="product-footer"><span class="product-price">A$49.99</span><a href="https://payhip.com/b/xoBDP" target="_blank" class="btn btn-primary btn-sm">Buy Now ↗</a></div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <a href="https://payhip.com/PracticalAICo" target="_blank" class="product-thumb-link">
+          <div class="product-badge product-badge-blue">📘 Complete Course</div>
+          <img src="images/thumb-fundamentals.svg" alt="AI Fundamentals and Practical Tools" class="product-thumb">
+        </a>
+        <div class="product-content">
+          <h3>AI Fundamentals &amp; Practical Tools</h3>
+          <p>The comprehensive guide for professionals who want to truly understand AI and use it confidently every day.</p>
+          <ul class="product-includes"><li>✓ How AI works, simply explained</li><li>✓ Top tools for your job type</li><li>✓ Real workplace workflows</li><li>✓ Updated regularly, yours forever</li></ul>
+          <div class="product-footer"><span class="product-price">A$79.00</span><a href="https://payhip.com/PracticalAICo" target="_blank" class="btn btn-primary btn-sm">Buy Now ↗</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPENCLAW VIDEO -->
+<section class="openclaw-video-section">
+  <div class="container openclaw-inner">
+    <div class="openclaw-text reveal">
+      <div class="section-tag">SEE IT IN ACTION</div>
+      <h2>What's inside the<br><span class="grad-text">OpenClaw Setup Pack?</span></h2>
+      <p>Watch this short walkthrough — see exactly what you get and how fast you can have your first AI agent running.</p>
+      <div class="openclaw-price-badge"><span class="price">A$49.99</span><span class="price-label">One-time · Instant download</span></div>
+      <a href="https://payhip.com/b/xoBDP" target="_blank" class="btn btn-primary">Get the Setup Pack ↗</a>
+    </div>
+    <div class="video-wrapper reveal">
+      <video controls playsinline preload="metadata">
+        <source src="/videos/openclaw.mp4" type="video/mp4">
+        <source src="videos/openclaw.mp4" type="video/mp4">
+      </video>
+      <div class="video-label">📦 OpenClaw Setup Pack</div>
+    </div>
+  </div>
+</section>
+
+<!-- ALL PRODUCTS — centred 3-col grid, thumb fills card top -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">ALL PRODUCTS</div>
+      <h2 class="section-title">Everything in the <span class="grad-text">toolkit.</span></h2>
+    </div>
+    <div class="all-grid">
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="mini-card reveal">
+        <img src="images/thumb-privacy.svg" alt="Privacy and Safe Use at Work" class="mini-thumb">
+        <div class="mini-body"><h4>Privacy &amp; Safe Use at Work</h4><p>What to share, what never to type into AI.</p></div>
+        <div class="mini-price">A$24.99</div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="mini-card reveal">
+        <img src="images/thumb-research.svg" alt="Research Aid" class="mini-thumb">
+        <div class="mini-body"><h4>Research Aid</h4><p>Research faster, summarise smarter, cite confidently.</p></div>
+        <div class="mini-price">A$9.99</div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="mini-card reveal">
+        <img src="images/thumb-meeting.svg" alt="Meeting Notes" class="mini-thumb">
+        <div class="mini-body"><h4>Meeting Notes</h4><p>AI workflows for capturing every meeting.</p></div>
+        <div class="mini-price">A$9.99</div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="mini-card reveal">
+        <img src="images/thumb-email.svg" alt="Email Help Pack" class="mini-thumb">
+        <div class="mini-body"><h4>Email Help Pack</h4><p>Write better emails faster. Every scenario covered.</p></div>
+        <div class="mini-price">A$9.99</div>
+      </a>
+      <a href="https://payhip.com/PracticalAICo" target="_blank" class="mini-card reveal">
+        <img src="images/thumb-prompts.svg" alt="Practical Prompt Templates" class="mini-thumb">
+        <div class="mini-body"><h4>Practical Prompt Templates</h4><p>Copy-paste prompts sorted by task type.</p></div>
+        <div class="mini-price">A$4.99</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <div class="section-tag">WHO THIS IS FOR</div>
+        <h2 class="section-title">Built for the<br><span class="grad-text">desk worker.</span></h2>
+        <p>You sit in front of a computer for work. You hear about AI constantly. But nobody shows you how it applies to YOUR actual job. That's what we do.</p>
+        <p>No hype. No jargon. Practical guides that help you work smarter and stay ahead.</p>
+        <div class="about-points">
+          <div class="about-point"><div class="point-check">✓</div><span>Office workers, managers and executives</span></div>
+          <div class="about-point"><div class="point-check">✓</div><span>Established professionals protecting their career</span></div>
+          <div class="about-point"><div class="point-check">✓</div><span>No tech background needed</span></div>
+          <div class="about-point"><div class="point-check">✓</div><span>Results from day one</span></div>
+        </div>
+      </div>
+      <div class="testimonial-stack reveal">
+        <div class="t-card"><p>"I went from avoiding AI to using it every single day. Genuinely written for normal people."</p><div class="t-author"><div class="t-avatar">SM</div><div><strong>Sarah M.</strong><span>Marketing Manager</span></div></div></div>
+        <div class="t-card t-card-offset"><p>"The OpenClaw guide saved me hours of Googling. Had it running in one afternoon."</p><div class="t-author"><div class="t-avatar">JT</div><div><strong>James T.</strong><span>Operations Lead</span></div></div></div>
+        <div class="t-card"><p>"Finally someone explains AI without making me feel stupid. Exactly what I needed."</p><div class="t-author"><div class="t-avatar">RK</div><div><strong>Rachel K.</strong><span>Finance Analyst</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL -->
+<section class="email-section" id="email-section">
+  <div class="container">
+    <div class="email-inner">
+      <div class="section-tag">WEEKLY NEWSLETTER</div>
+      <h2 class="section-title">Useful AI tips.<br><span class="grad-text">Every week.</span></h2>
+      <p>Practical, actionable, 3-minute reads. No spam. Unsubscribe anytime.</p>
+      <form class="email-form" id="emailForm">
+        <input type="email" class="email-input" placeholder="your@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+      <p class="email-note">Join professionals staying ahead of the AI curve. <a href="newsletter.html" style="color:var(--teal);">Browse past issues ↗</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <a href="/" class="nav-logo footer-logo">
+          <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H9l-4 3v-3H4a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z" fill="rgba(6,13,26,0.5)" stroke="white" stroke-width="1.5"/><path d="M14 9l2 3 3 1.5-3 1.5-2 3-2-3-3-1.5 3-1.5z" fill="white"/></svg></div>
+          <span class="nav-brand">The Practical <em class="grad-text">AI</em> Co.</span>
+        </a>
+        <p class="footer-tagline">Smarter work. Less effort.</p>
+        <div class="footer-social">
+          <a href="https://www.youtube.com/@PracticalAiCo" target="_blank" class="social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.05 0 12 0 12s0 3.95.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.47 20.5 12 20.5 12 20.5s7.53 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.95 24 12 24 12s0-3.95-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg></a>
+          <a href="https://www.tiktok.com/@practical_ai_co" target="_blank" class="social-link" aria-label="TikTok"><svg width="16" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.87a8.2 8.2 0 0 0 4.78 1.52V6.95a4.85 4.85 0 0 1-1.01-.26z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col"><h4>Products</h4><ul><li><a href="https://payhip.com/b/7sNzw" target="_blank">Free Beginners Guide</a></li><li><a href="https://payhip.com/b/xoBDP" target="_blank">OpenClaw Setup Pack</a></li><li><a href="https://payhip.com/PracticalAICo" target="_blank">AI Fundamentals</a></li><li><a href="#start-here">Start Here Series</a></li></ul></div>
+        <div class="footer-col"><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="newsletter.html">Newsletter</a></li><li><a href="faq.html">FAQ</a></li><li><a href="mailto:hello@practicalai.co">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 The Practical AI Co. All rights reserved.</p><p>hello@practicalai.co</p></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+// Frank video controls
+var fv = document.getElementById('frankVideo');
+var fp = document.getElementById('frankPlayBtn');
+var fs = document.getElementById('frankSoundBtn');
+if(fv){ fv.play(); }
+function toggleFrank(){
+  if(fv.paused){ fv.play(); fp.textContent='⏸'; } else { fv.pause(); fp.textContent='▶'; }
+}
+function toggleFrankSound(){
+  fv.muted = !fv.muted;
+  fs.textContent = fv.muted ? '🔇' : '🔊';
+}
+</script>
+</body>
+</html>
