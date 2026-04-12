@@ -33,7 +33,7 @@
   <text x="350" y="31" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#14B8A6" text-anchor="middle">🎓</text>
   <!-- Title -->
   <text x="18" y="90" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="white" letter-spacing="-0.5">AI Fundamentals</text>
-  <text x="18" y="126" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#F97316" letter-spacing="-0.5">& Practical Tools</text>
+  <text x="18" y="126" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#F97316" letter-spacing="-0.5">and Practical Tools</text>
   <!-- Accent line -->
   <rect x="18" y="136" width="200" height="2" fill="url(#acc)" rx="1"/>
   <!-- Subtitle -->
