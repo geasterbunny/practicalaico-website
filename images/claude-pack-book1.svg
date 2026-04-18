@@ -1,80 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="280" viewBox="0 0 400 280">
   <defs>
-    <linearGradient id="bg1" x1="0" y1="0" x2="800" y2="480" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#060d1a"/>
-      <stop offset="100%" stop-color="#0f1f38"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0B1628"/>
+      <stop offset="1" stop-color="#0D1F3C"/>
     </linearGradient>
-    <linearGradient id="tealGrad1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#14B8A6"/>
-      <stop offset="100%" stop-color="#0EA5E9"/>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
     </linearGradient>
-    <clipPath id="roundCard1"><rect width="800" height="480" rx="16"/></clipPath>
   </defs>
-
-  <!-- Background -->
-  <rect width="800" height="480" rx="16" fill="url(#bg1)"/>
-  <rect x="1" y="1" width="798" height="478" rx="15" fill="none" stroke="#14B8A6" stroke-opacity="0.15" stroke-width="1"/>
-
-  <!-- Top-left badge: BOOK 1 -->
-  <rect x="20" y="18" width="78" height="26" rx="6" fill="#14B8A6"/>
-  <text x="34" y="36" font-family="system-ui,sans-serif" font-size="12" font-weight="800" fill="#060d1a" letter-spacing="0.5">BOOK 1</text>
-
-  <!-- Top-right icon -->
-  <circle cx="755" cy="32" r="18" fill="#14B8A6" fill-opacity="0.12"/>
-  <text x="748" y="38" font-family="system-ui,sans-serif" font-size="18">🎯</text>
-
-  <!-- Title line 1 -->
-  <text x="24" y="82" font-family="system-ui,sans-serif" font-size="30" font-weight="800" fill="#F0F6FF">Your First</text>
-
-  <!-- Title line 2 (teal) -->
-  <text x="24" y="124" font-family="system-ui,sans-serif" font-size="38" font-weight="800" fill="#14B8A6" letter-spacing="-0.5">Claude Project</text>
-
-  <!-- Subtitle -->
-  <text x="24" y="156" font-family="system-ui,sans-serif" font-size="13" fill="#7A90B0">30-minute setup. No code needed.</text>
-
-  <!-- Price badge -->
-  <rect x="24" y="172" width="88" height="30" rx="6" fill="#14B8A6" fill-opacity="0.1" stroke="#14B8A6" stroke-width="1"/>
-  <text x="38" y="193" font-family="system-ui,sans-serif" font-size="15" font-weight="800" fill="#14B8A6">A$14.99</text>
-
-  <!-- Mini PDF preview (right side) -->
-  <rect x="460" y="24" width="310" height="340" rx="8" fill="#0a1628" stroke="#14B8A6" stroke-opacity="0.4" stroke-width="1"/>
-
-  <!-- PDF header bar -->
-  <rect x="472" y="36" width="286" height="26" rx="4" fill="#14B8A6"/>
-  <text x="484" y="54" font-family="system-ui,sans-serif" font-size="10" font-weight="800" fill="#060d1a" letter-spacing="0.8">PRACTICAL AI CO.</text>
-
-  <!-- Content lines -->
-  <rect x="484" y="78" width="200" height="5" rx="2" fill="#14B8A6" fill-opacity="0.5"/>
-  <rect x="484" y="90" width="140" height="5" rx="2" fill="#14B8A6" fill-opacity="0.45"/>
-  <rect x="484" y="102" width="230" height="5" rx="2" fill="#14B8A6" fill-opacity="0.4"/>
-  <rect x="484" y="114" width="170" height="5" rx="2" fill="#14B8A6" fill-opacity="0.35"/>
-  <rect x="484" y="126" width="120" height="5" rx="2" fill="#14B8A6" fill-opacity="0.5"/>
-  <rect x="484" y="138" width="200" height="5" rx="2" fill="#14B8A6" fill-opacity="0.45"/>
-  <rect x="484" y="150" width="150" height="5" rx="2" fill="#14B8A6" fill-opacity="0.4"/>
-  <rect x="484" y="162" width="260" height="5" rx="2" fill="#14B8A6" fill-opacity="0.35"/>
-  <rect x="484" y="174" width="180" height="5" rx="2" fill="#14B8A6" fill-opacity="0.3"/>
-  <rect x="484" y="186" width="220" height="5" rx="2" fill="#14B8A6" fill-opacity="0.45"/>
-  <rect x="484" y="198" width="130" height="5" rx="2" fill="#14B8A6" fill-opacity="0.4"/>
-  <rect x="484" y="210" width="240" height="5" rx="2" fill="#14B8A6" fill-opacity="0.35"/>
-  <rect x="484" y="222" width="160" height="5" rx="2" fill="#14B8A6" fill-opacity="0.5"/>
-  <rect x="484" y="234" width="200" height="5" rx="2" fill="#14B8A6" fill-opacity="0.4"/>
-  <rect x="484" y="246" width="190" height="5" rx="2" fill="#14B8A6" fill-opacity="0.35"/>
-  <rect x="484" y="258" width="250" height="5" rx="2" fill="#14B8A6" fill-opacity="0.3"/>
-  <rect x="484" y="270" width="140" height="5" rx="2" fill="#14B8A6" fill-opacity="0.45"/>
-  <rect x="484" y="282" width="210" height="5" rx="2" fill="#14B8A6" fill-opacity="0.4"/>
-
-  <!-- Accent block at bottom of PDF -->
-  <rect x="472" y="304" width="286" height="28" rx="4" fill="#14B8A6"/>
-  <text x="486" y="323" font-family="system-ui,sans-serif" font-size="10" font-weight="700" fill="#060d1a" letter-spacing="0.3">copy-paste ready</text>
-
-  <!-- Decorative corner mark -->
-  <path d="M740 24 L770 24 L770 54" stroke="#14B8A6" stroke-opacity="0.3" stroke-width="1" fill="none"/>
-
-  <!-- Bottom bar -->
-  <rect x="0" y="432" width="800" height="48" rx="0" fill="#060d1a" fill-opacity="0.8"/>
-  <line x1="0" y1="432" x2="800" y2="432" stroke="#14B8A6" stroke-opacity="0.1"/>
-
-  <!-- Footer text -->
-  <text x="24" y="462" font-family="system-ui,sans-serif" font-size="11" fill="#7A90B0">The Practical AI Co.</text>
-  <text x="670" y="462" font-family="system-ui,sans-serif" font-size="11" fill="#7A90B0">practicalaico.ai</text>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="#14B8A6" stroke-width="0.6">
+    <line x1="0" y1="70" x2="400" y2="70"/><line x1="0" y1="140" x2="400" y2="140"/><line x1="0" y1="210" x2="400" y2="210"/>
+    <line x1="100" y1="0" x2="100" y2="280"/><line x1="200" y1="0" x2="200" y2="280"/><line x1="300" y1="0" x2="300" y2="280"/>
+  </g>
+  <ellipse cx="320" cy="80" rx="130" ry="90" fill="rgba(14,165,233,0.08)"/>
+  <ellipse cx="80" cy="220" rx="100" ry="70" fill="rgba(20,184,166,0.06)"/>
+  <rect x="0" y="0" width="4" height="280" fill="url(#acc)"/>
+  <rect x="18" y="16" width="80" height="24" rx="5" fill="#14B8A6"/>
+  <text x="58" y="32" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0B1628" text-anchor="middle" letter-spacing="0.5">BOOK 1</text>
+  <circle cx="350" cy="26" r="16" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.3)" stroke-width="1"/>
+  <text x="350" y="31" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#14B8A6" text-anchor="middle">🎯</text>
+  <text x="18" y="90" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="white" letter-spacing="-0.5">Your First</text>
+  <text x="18" y="126" font-family="'Segoe UI',Arial,sans-serif" font-size="28" font-weight="800" fill="#14B8A6" letter-spacing="-0.5">Claude Project</text>
+  <rect x="18" y="136" width="200" height="2" fill="url(#acc)" rx="1"/>
+  <text x="18" y="160" font-family="'Segoe UI',Arial,sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" font-weight="400">30-minute setup. No code needed.</text>
+  <g transform="translate(250, 50)">
+    <rect x="8" y="8" width="120" height="155" rx="5" fill="rgba(20,184,166,0.12)"/>
+    <rect x="4" y="4" width="120" height="155" rx="5" fill="rgba(14,165,233,0.1)"/>
+    <rect x="0" y="0" width="120" height="155" rx="5" fill="#F8FAFC"/>
+    <rect x="0" y="0" width="120" height="22" rx="5" fill="#0B1628"/>
+    <rect x="0" y="17" width="120" height="5" fill="#0B1628"/>
+    <rect x="0" y="19" width="120" height="3" fill="#14B8A6" opacity="0.8"/>
+    <text x="60" y="14" font-family="'Segoe UI',Arial,sans-serif" font-size="7" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-weight="600">PRACTICAL AI CO.</text>
+    <rect x="10" y="30" width="100" height="5" rx="2" fill="#E2E8F0"/>
+    <rect x="10" y="40" width="75" height="5" rx="2" fill="#E2E8F0"/>
+    <rect x="10" y="54" width="100" height="28" rx="4" fill="#F0FDF4" stroke="#14B8A6" stroke-width="0.8"/>
+    <rect x="10" y="54" width="3" height="28" rx="2" fill="#14B8A6"/>
+    <rect x="17" y="61" width="65" height="4" rx="2" fill="#CCFBF1"/>
+    <rect x="17" y="70" width="50" height="4" rx="2" fill="#CCFBF1"/>
+    <rect x="10" y="90" width="100" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="10" y="100" width="80" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="10" y="110" width="90" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="10" y="120" width="65" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="10" y="134" width="100" height="18" rx="3" fill="#0F172A"/>
+    <text x="60" y="146" font-family="'Courier New',monospace" font-size="7" fill="#14B8A6" text-anchor="middle">copy-paste ready</text>
+    <rect x="0" y="148" width="120" height="7" rx="3" fill="#F1F5F9"/>
+    <text x="60" y="154" font-family="'Segoe UI',Arial,sans-serif" font-size="6" fill="#94A3B8" text-anchor="middle">practicalaico.ai</text>
+  </g>
+  <rect x="18" y="186" width="90" height="30" rx="8" fill="rgba(20,184,166,0.15)" stroke="rgba(20,184,166,0.4)" stroke-width="1"/>
+  <text x="63" y="206" font-family="'Segoe UI',Arial,sans-serif" font-size="15" font-weight="800" fill="#14B8A6" text-anchor="middle">A$14.99</text>
+  <rect x="0" y="258" width="400" height="22" fill="rgba(0,0,0,0.25)"/>
+  <text x="18" y="273" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.35)">The Practical AI Co.</text>
+  <text x="382" y="273" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.35)" text-anchor="end">practicalaico.ai</text>
 </svg>
