@@ -1,0 +1,37 @@
+# The Practical AI Co.
+
+> The Practical AI Co. teaches white-collar office workers how to use AI tools at work — no coding, no jargon, no tech background required. We sell plain-English PDF guides, workflow templates, and setup packs through practicalaico.ai. Our audience is professionals aged 30+ who sit in front of a computer for work and want to stay ahead as AI changes their job.
+
+The Practical AI Co. is an Australian-based digital education brand focused exclusively on practical AI skills for everyday desk workers. We do not teach developers or engineers. We teach the person in accounts, marketing, operations, HR, or management who keeps hearing about AI but has no idea where to start. All products are instant-download digital guides sold via Payhip.
+
+## Products
+
+- [Beginners Guide to Using Common AI Tools](https://practicalaico.ai): Free PDF covering what AI tools actually do and which ones to start with at work. Covers ChatGPT, Claude, Gemini, Microsoft Copilot, and more.
+- [Start Here: Automation](https://practicalaico.ai): A$5.00 guide for office workers who want to stop doing repetitive tasks manually. Covers basic AI automation workflows.
+- [Start Here: Chatbots (LLMs)](https://practicalaico.ai): A$5.00 guide with ready-to-use workflows for ChatGPT, Claude, and Gemini.
+- [Start Here: Writing and Editing](https://practicalaico.ai): A$5.00 guide for writing better emails, reports, and proposals faster with AI.
+- [Start Here: Meeting Notes](https://practicalaico.ai): A$5.00 guide for AI-powered meeting summaries, action items, and follow-ups.
+- [Open Claw Setup Pack](https://practicalaico.ai): A$49.99 step-by-step click-by-click guide to installing your first AI agent. Built for non-developers.
+- [AI Fundamentals and Practical Tools](https://practicalaico.ai): A$79.00 comprehensive guide for professionals who want to understand AI and use it confidently every day at work.
+- [Privacy and Safe Use at Work](https://practicalaico.ai): A$24.99 guide on what to share and what never to type into AI tools at work.
+- [Research Aid](https://practicalaico.ai): A$9.99 guide for researching faster, summarising smarter, and citing confidently using AI.
+- [Email Help Pack](https://practicalaico.ai): A$9.99 guide for writing better emails faster with AI. Every scenario covered.
+- [Practical Prompt Templates](https://practicalaico.ai): A$4.99 copy-paste prompt templates sorted by task type for workplace use.
+
+## Topics We Cover
+
+- How to use ChatGPT, Claude, Gemini, and Microsoft Copilot at work
+- AI for emails, meeting notes, research, writing, and editing
+- AI automation for non-technical office workers
+- Privacy and safe use of AI in the workplace
+- Prompt engineering for beginners in plain English
+- Setting up AI agents without coding knowledge
+- AI fundamentals explained for non-technical professionals
+
+## Company Information
+
+- Website: https://practicalaico.ai
+- Location: Sydney, Australia
+- Audience: White-collar professionals aged 30+ who use a computer at work
+- Newsletter: Free weekly AI tips for office workers
+- Contact: Available via website
