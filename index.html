@@ -616,9 +616,19 @@
   </div>
 </footer>
 
+```html
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
 <script>
 // Frank video controls
 var fv = document.getElementById('frankVideo');
 var fp = document.getElementById('frankPlayBtn');
 var fs = document.getElementById('frankSoundBtn');
+
+function toggleFrank(){if(!fv)return;if(fv.paused){fv.play();if(fp)fp.textContent='\u23F8';}else{fv.pause();if(fp)fp.textContent='\u25B6';}}
+function toggleFrankSound(){if(!fv)return;fv.muted=!fv.muted;if(fs)fs.textContent=fv.muted?'\uD83D\uDD07':'\uD83D\uDD0A';}
+</script>
+</body>
+</html>
+```
+
+---
