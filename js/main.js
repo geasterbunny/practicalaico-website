@@ -312,15 +312,37 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-/* ===================== EMAIL FORM ===================== */
-const emailForm = document.getElementById('emailForm');
-if (emailForm) {
-  emailForm.addEventListener('submit', e => {
-    e.preventDefault();
-    const btn  = emailForm.querySelector('button');
-    const orig = btn.textContent;
-    btn.textContent = "✓ You're in!";
-    btn.style.background = '#14B8A6';
-    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; emailForm.reset(); }, 3000);
-  });
-}
+/* ===================== POPUP FREQUENCY GUARD ===================== */
+// MailerLite popup has two triggers: timeout (5s) + exit-intent.
+// Both can fire in the same session, causing the "keeps repeating" issue.
+// This ensures the popup shows maximum once per browser session.
+(function () {
+  var POPUP_CLASS = 'ml-subscribe-form-185522879970936427';
+  var KEY = 'ml_popup_shown';
+
+  function suppress() {
+    var el = document.querySelector('.' + POPUP_CLASS);
+    if (el) {
+      var wrap = el.closest('[id^="mlb2-"]') || el.parentElement;
+      if (wrap) wrap.style.display = 'none';
+    }
+  }
+
+  if (sessionStorage.getItem(KEY)) {
+    // Already shown this session — suppress any future appearances immediately
+    var obs = new MutationObserver(suppress);
+    obs.observe(document.body, { childList: true, subtree: true });
+  } else {
+    // Watch for first appearance, then lock it out for the rest of the session
+    var obs2 = new MutationObserver(function () {
+      var el = document.querySelector('.' + POPUP_CLASS);
+      if (el) {
+        sessionStorage.setItem(KEY, '1');
+        obs2.disconnect();
+        var obs3 = new MutationObserver(suppress);
+        obs3.observe(document.body, { childList: true, subtree: true });
+      }
+    });
+    obs2.observe(document.body, { childList: true, subtree: true });
+  }
+})();

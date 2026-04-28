@@ -109,6 +109,20 @@ Tone: professional, direct, under 200 words total.</div>
   <div class="guide-nav">
     <a href="claude-projects-setup.html"><span class="nav-label">← Previous</span>Set Up a Claude Project in 5 Minutes</a>
   </div>
+
+<div class="nl-cta-wrap">
+  <style>.nl-cta-wrap{margin-top:3rem;padding:2rem 2rem 1.8rem;background:rgba(20,184,166,0.07);border:1px solid rgba(20,184,166,0.2);border-radius:14px;text-align:center}.nl-cta-wrap .nl-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#14B8A6;margin-bottom:.5rem}.nl-cta-wrap h3{font-size:1.15rem;font-weight:700;color:#f1f5f9;margin:.4rem 0 .5rem}.nl-cta-wrap>p{font-size:.88rem;color:#94a3b8;margin:0 0 1.2rem}.nl-cta-form{display:flex;gap:.6rem;max-width:420px;margin:0 auto .8rem;flex-wrap:wrap}.nl-cta-form input{flex:1;min-width:190px;background:#0d1f3c;color:#fff;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none}.nl-cta-form input::placeholder{color:rgba(255,255,255,0.35)}.nl-cta-form input:focus{border-color:rgba(20,184,166,0.5)}.nl-cta-form button{background:linear-gradient(135deg,#14B8A6,#0EA5E9);color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;transition:opacity .2s}.nl-cta-form button:hover{opacity:.9}.nl-cta-success{display:none;color:#14B8A6;font-weight:600;font-size:.92rem;margin:.6rem 0 0}.nl-cta-note{font-size:.74rem;color:#475569;margin:.5rem 0 0}@media(max-width:480px){.nl-cta-form{flex-direction:column}.nl-cta-form input,.nl-cta-form button{width:100%}}</style>
+  <div class="nl-tag">FREE WEEKLY NEWSLETTER</div>
+  <h3>One practical AI tip, every week</h3>
+  <p>Join office workers staying ahead on AI. Free Beginners Guide included on signup. 3 minutes to read.</p>
+  <form class="nl-cta-form" id="nlCtaForm" novalidate>
+    <input type="email" id="nlCtaEmail" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe Free ↗</button>
+  </form>
+  <p class="nl-cta-success" id="nlCtaSuccess">✓ You're in! Check your inbox for the free guide.</p>
+  <p class="nl-cta-note">No spam. Unsubscribe anytime.</p>
+</div>
+<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
 </article>
 <footer><p>© 2026 The Practical AI Co. All rights reserved.</p><p style="margin-top:.5rem"><a href="https://practicalaico.ai/privacy.html">Privacy Policy</a> · <a href="https://practicalaico.ai/terms.html">Terms</a> · <a href="https://practicalaico.ai/faq.html">FAQ</a></p></footer>
 </body>
