@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use Claude in Word, Excel, and Outlook — The Practical AI Co.</title>
+  <meta name="description" content="Anthropic's Claude is now available as a Microsoft 365 add-in. Here's what it can do in Word, Excel, and Outlook — and how to install it.">
+  <meta name="keywords" content="Claude Microsoft 365, Claude Word add-in, Claude Excel add-in, Claude Outlook add-in, Anthropic M365, AI in Microsoft Office">
+  <link rel="canonical" href="https://practicalaico.ai/guides/claude-in-word-excel-outlook.html">
+  <meta property="og:title" content="How to Use Claude in Word, Excel, and Outlook">
+  <meta property="og:description" content="Anthropic's Claude is now available as a Microsoft 365 add-in. Here's what it can do in Word, Excel, and Outlook — and how to install it.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://practicalaico.ai/guides/claude-in-word-excel-outlook.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Use Claude in Word, Excel, and Outlook",
+    "description": "Anthropic's Claude is now available as a Microsoft 365 add-in. Here's what it can do in Word, Excel, and Outlook — and how to install it.",
+    "author": {"@type": "Organization", "name": "The Practical AI Co.", "url": "https://practicalaico.ai"},
+    "publisher": {"@type": "Organization", "name": "The Practical AI Co.", "url": "https://practicalaico.ai"},
+    "datePublished": "2026-05-08",
+    "mainEntityOfPage": "https://practicalaico.ai/guides/claude-in-word-excel-outlook.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0B1220;--bg-card:#111b2e;--text:#e2e8f0;--text-muted:#94a3b8;--text-heading:#f1f5f9;--teal:#14B8A6;--cyan:#0EA5E9;--orange:#F97316;--gradient:linear-gradient(135deg,#14B8A6,#0EA5E9);--border:rgba(148,163,184,0.1);--max-w:720px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}nav{position:sticky;top:0;z-index:100;background:rgba(11,18,32,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.9rem 1.5rem}.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.nav-logo{font-weight:700;font-size:1.05rem;color:var(--text-heading);text-decoration:none}.nav-logo em{font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.nav-links{display:flex;gap:1.6rem;align-items:center}.nav-links a{color:var(--text-muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}.nav-links a:hover{color:var(--text)}.nav-cta{background:var(--gradient);color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem!important}.article-container{max-width:var(--max-w);margin:0 auto;padding:3rem 1.5rem 5rem}.article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;flex-wrap:wrap}.meta-tag{background:rgba(14,165,233,0.12);color:var(--cyan);padding:.25rem .75rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}.meta-date,.meta-read{color:var(--text-muted);font-size:.82rem}.article-title{font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:700;color:var(--text-heading);line-height:1.2;margin-bottom:1.2rem}.article-subtitle{font-size:1.1rem;color:var(--text-muted);line-height:1.6;margin-bottom:2.5rem;border-left:3px solid var(--teal);padding-left:1rem}.article-body h2{font-size:1.35rem;font-weight:700;color:var(--text-heading);margin:2.5rem 0 .8rem;line-height:1.3}.article-body h3{font-size:1.1rem;font-weight:600;color:var(--text-heading);margin:2rem 0 .6rem}.article-body p{margin-bottom:1.2rem}.article-body strong{color:var(--text-heading);font-weight:600}.article-body ul{margin:0 0 1.2rem 1.4rem}.article-body li{margin-bottom:.5rem}.prompt-block{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:8px;padding:1.2rem 1.4rem;margin:1.5rem 0;font-family:'Space Mono',monospace;font-size:.85rem;line-height:1.7;white-space:pre-wrap}.tip-block{background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.2);border-radius:10px;padding:1.3rem 1.5rem;margin:2rem 0}.tip-block .tip-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--orange);margin-bottom:.5rem}.product-cta{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.8rem;margin:2.5rem 0;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}.product-cta-text{flex:1;min-width:200px}.product-cta-text h4{font-size:1rem;font-weight:700;color:var(--text-heading);margin-bottom:.3rem}.product-cta-text p{font-size:.88rem;color:var(--text-muted);margin:0}.product-cta-btn{background:var(--gradient);color:#fff;text-decoration:none;padding:.7rem 1.5rem;border-radius:8px;font-weight:600;font-size:.9rem;white-space:nowrap;transition:opacity .2s}.product-cta-btn:hover{opacity:.9}.guide-nav{display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}.guide-nav a{color:var(--text-muted);text-decoration:none;font-size:.88rem;transition:color .2s}.guide-nav a:hover{color:var(--teal)}.guide-nav .nav-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);opacity:.6;display:block;margin-bottom:.2rem}.back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--text-muted);text-decoration:none;font-size:.85rem;margin-bottom:2rem;transition:color .2s}.back-link:hover{color:var(--teal)}footer{border-top:1px solid var(--border);padding:2rem 1.5rem;text-align:center;color:var(--text-muted);font-size:.8rem}footer a{color:var(--text-muted);text-decoration:none}footer a:hover{color:var(--text)}@media(max-width:640px){.article-container{padding:2rem 1rem 3rem}.product-cta{flex-direction:column;align-items:stretch;text-align:center}.nav-links{gap:.8rem}}
+  </style>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="https://practicalaico.ai/" class="nav-logo">The Practical <em>AI</em> Co.</a><div class="nav-links"><a href="https://practicalaico.ai/#products">Products</a><a href="https://practicalaico.ai/guides/">Guides</a><a href="https://practicalaico.ai/newsletter.html">Newsletter</a><a href="https://payhip.com/b/7sNzw" class="nav-cta" target="_blank">Free Guide ↗</a></div></div></nav>
+<article class="article-container">
+  <a href="https://practicalaico.ai/guides/" class="back-link">← All Guides</a>
+  <div class="article-meta">
+    <span class="meta-tag">Tools</span>
+    <span class="meta-date">May 2026</span>
+    <span class="meta-read">5 min read</span>
+  </div>
+  <h1 class="article-title">How to Use Claude in Word, Excel, and Outlook</h1>
+  <p class="article-subtitle">Anthropic's Claude is now available as a Microsoft 365 add-in for Word, Excel, PowerPoint, and Outlook. Here's what it actually does in each app — and how to get started.</p>
+  <div class="article-body">
+
+    <h2>What's new</h2>
+    <p>In early 2026, Anthropic released official Claude add-ins for Microsoft 365. These bring Claude directly into the apps where most office workers spend their day — without needing to switch tabs or copy text in and out of a browser.</p>
+    <p>The add-ins are available on Claude's Pro plan (approximately A$30/month) or through organisations with an enterprise licence. If your workplace manages M365 add-ins centrally, ask your IT team whether Claude has been approved — it may already be available to you.</p>
+
+    <h2>How to install the add-in</h2>
+    <p>The process is the same for Word, Excel, PowerPoint, and Outlook:</p>
+    <ul>
+      <li>Open the relevant Microsoft 365 app (desktop or web version)</li>
+      <li>Go to <strong>Insert → Add-ins</strong> (or <strong>Home → Get Add-ins</strong> in Outlook)</li>
+      <li>Search for "Claude" in the Microsoft AppSource store</li>
+      <li>Click <strong>Add</strong>, then sign in with your Anthropic account</li>
+    </ul>
+    <p>Once installed, Claude appears as a sidebar panel. You open it from the Home or Insert ribbon tab depending on the app.</p>
+
+    <h2>What Claude does in Word</h2>
+    <p>The Word add-in lets you work on the document you have open. You can select a section of text and ask Claude to rewrite, shorten, expand, or change the tone — without copying and pasting. You can also ask Claude to draft new sections based on an outline you've already written.</p>
+    <p>Useful things to try in Word:</p>
+    <ul>
+      <li>Select a paragraph → "Make this more concise"</li>
+      <li>Select a heading → "Draft three paragraphs expanding on this point"</li>
+      <li>"Summarise this document in five bullet points for an executive audience"</li>
+      <li>"Check this section for inconsistencies with the earlier section on [topic]"</li>
+    </ul>
+
+    <h2>What Claude does in Excel</h2>
+    <p>In Excel, Claude can read the data in your spreadsheet and help you work with it. It's particularly useful for understanding what a formula does, writing new formulas, and explaining data patterns in plain language.</p>
+    <p>Useful things to try in Excel:</p>
+    <ul>
+      <li>"Explain what this formula does in plain English"</li>
+      <li>"Write a formula to calculate the percentage change between column B and column C"</li>
+      <li>"Summarise the key trends in this data table"</li>
+      <li>"What's a better way to structure this data for a pivot table?"</li>
+    </ul>
+    <p>Claude doesn't write formulas directly into cells — it gives you the formula to copy in yourself. That's actually useful, because you can check it before it touches your data.</p>
+
+    <h2>What Claude does in Outlook</h2>
+    <p>The Outlook add-in works on the email you're reading or composing. You can ask Claude to summarise a long thread, draft a reply, or adjust the tone of something you've already written.</p>
+
+    <div class="prompt-block">I need to decline this meeting invitation professionally. The reason is I have a conflicting commitment that week and the topic doesn't require my input. Write a brief, polite decline that leaves the door open for the meeting notes to be shared with me.</div>
+
+    <p>Other useful Outlook tasks:</p>
+    <ul>
+      <li>"Summarise this thread and list any action items assigned to me"</li>
+      <li>"Rewrite my draft to be more direct — it's currently too long"</li>
+      <li>"This email is from a client who is unhappy. Draft a response that acknowledges their concern and outlines next steps"</li>
+    </ul>
+
+    <h2>What to watch out for</h2>
+    <p>The add-in reads the content of the document or email you're working on. Before using it on anything sensitive — confidential contracts, HR matters, personal information about colleagues — check your organisation's policy on third-party AI tools. Claude's data handling for the M365 add-ins falls under Anthropic's privacy terms, not your company's M365 data residency agreements.</p>
+    <p>When in doubt, use the add-in for drafting and structure work, not for processing documents that contain personal or commercially sensitive data.</p>
+
+    <div class="tip-block">
+      <div class="tip-label">💡 This week's action</div>
+      <p>If you use Microsoft 365, open Word or Outlook and search "Claude" in the Add-ins store. Install it and try one task — summarise the last email thread you dealt with, or ask it to tighten up a paragraph you've been staring at. It takes two minutes to install and you'll know immediately whether it's worth keeping.</p>
+    </div>
+
+  </div>
+  <div class="product-cta">
+    <div class="product-cta-text">
+      <h4>Start Here: Chatbots</h4>
+      <p>The beginner's guide to Claude, ChatGPT, and Copilot at work — what each one does best. A$5.00.</p>
+    </div>
+    <a href="https://payhip.com/b/MpAaX" class="product-cta-btn" target="_blank">Get It Now ↗</a>
+  </div>
+  <div class="guide-nav">
+    <a href="ai-better-questions-at-work.html"><span class="nav-label">← Previous</span>How to Ask AI a Better Question</a>
+    <a href="https://practicalaico.ai/guides/" style="text-align:right;margin-left:auto"><span class="nav-label">Browse All →</span>All Guides</a>
+  </div>
+
+<div class="nl-cta-wrap">
+  <style>.nl-cta-wrap{margin-top:3rem;padding:2rem 2rem 1.8rem;background:rgba(20,184,166,0.07);border:1px solid rgba(20,184,166,0.2);border-radius:14px;text-align:center}.nl-cta-wrap .nl-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#14B8A6;margin-bottom:.5rem}.nl-cta-wrap h3{font-size:1.15rem;font-weight:700;color:#f1f5f9;margin:.4rem 0 .5rem}.nl-cta-wrap>p{font-size:.88rem;color:#94a3b8;margin:0 0 1.2rem}.nl-cta-form{display:flex;gap:.6rem;max-width:420px;margin:0 auto .8rem;flex-wrap:wrap}.nl-cta-form input{flex:1;min-width:190px;background:#0d1f3c;color:#fff;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none}.nl-cta-form input::placeholder{color:rgba(255,255,255,0.35)}.nl-cta-form input:focus{border-color:rgba(20,184,166,0.5)}.nl-cta-form button{background:linear-gradient(135deg,#14B8A6,#0EA5E9);color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;transition:opacity .2s}.nl-cta-form button:hover{opacity:.9}.nl-cta-success{display:none;color:#14B8A6;font-weight:600;font-size:.92rem;margin:.6rem 0 0}.nl-cta-note{font-size:.74rem;color:#475569;margin:.5rem 0 0}@media(max-width:480px){.nl-cta-form{flex-direction:column}.nl-cta-form input,.nl-cta-form button{width:100%}}</style>
+  <div class="nl-tag">FREE WEEKLY NEWSLETTER</div>
+  <h3>One practical AI tip, every week</h3>
+  <p>Join office workers staying ahead on AI. Free Beginners Guide included on signup. 3 minutes to read.</p>
+  <form class="nl-cta-form" id="nlCtaForm" novalidate>
+    <input type="email" id="nlCtaEmail" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe Free ↗</button>
+  </form>
+  <p class="nl-cta-success" id="nlCtaSuccess">✓ You're in! Check your inbox for the free guide.</p>
+  <p class="nl-cta-note">No spam. Unsubscribe anytime.</p>
+</div>
+<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
+</article>
+<footer><p>© 2026 The Practical AI Co. All rights reserved.</p><p style="margin-top:.5rem"><a href="https://practicalaico.ai/privacy.html">Privacy Policy</a> · <a href="https://practicalaico.ai/terms.html">Terms</a> · <a href="https://practicalaico.ai/faq.html">FAQ</a></p></footer>
+</body>
+</html>
