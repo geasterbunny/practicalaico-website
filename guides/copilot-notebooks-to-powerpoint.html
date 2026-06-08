@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Use Copilot Notebooks to Build a Presentation From Your Meeting Notes — The Practical AI Co.</title>
+  <meta name="description" content="Copilot Notebooks can now generate a PowerPoint directly from your stored notes and references. Here's how to set it up and get a useful first draft in under 10 minutes.">
+  <meta name="keywords" content="Copilot Notebooks PowerPoint, Microsoft 365 Copilot presentation from notes, Copilot generate slides, meeting notes to presentation, Microsoft 365 Copilot 2026">
+  <link rel="canonical" href="https://practicalaico.ai/guides/copilot-notebooks-to-powerpoint.html">
+  <meta property="og:title" content="How to Use Copilot Notebooks to Build a Presentation From Your Meeting Notes">
+  <meta property="og:description" content="Copilot Notebooks can now generate a PowerPoint directly from your stored notes and references. Here's how to set it up and get a useful first draft in under 10 minutes.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://practicalaico.ai/guides/copilot-notebooks-to-powerpoint.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Use Copilot Notebooks to Build a Presentation From Your Meeting Notes",
+    "description": "Copilot Notebooks can now generate a PowerPoint directly from your stored notes and references. Here's how to set it up and get a useful first draft in under 10 minutes.",
+    "author": {"@type": "Organization", "name": "The Practical AI Co.", "url": "https://practicalaico.ai"},
+    "publisher": {"@type": "Organization", "name": "The Practical AI Co.", "url": "https://practicalaico.ai"},
+    "datePublished": "2026-05-15",
+    "mainEntityOfPage": "https://practicalaico.ai/guides/copilot-notebooks-to-powerpoint.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0B1220;--bg-card:#111b2e;--text:#e2e8f0;--text-muted:#94a3b8;--text-heading:#f1f5f9;--teal:#14B8A6;--cyan:#0EA5E9;--orange:#F97316;--gradient:linear-gradient(135deg,#14B8A6,#0EA5E9);--border:rgba(148,163,184,0.1);--max-w:720px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}nav{position:sticky;top:0;z-index:100;background:rgba(11,18,32,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.9rem 1.5rem}.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.nav-logo{font-weight:700;font-size:1.05rem;color:var(--text-heading);text-decoration:none}.nav-logo em{font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.nav-links{display:flex;gap:1.6rem;align-items:center}.nav-links a{color:var(--text-muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}.nav-links a:hover{color:var(--text)}.nav-cta{background:var(--gradient);color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem!important}.article-container{max-width:var(--max-w);margin:0 auto;padding:3rem 1.5rem 5rem}.article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;flex-wrap:wrap}.meta-tag{background:rgba(14,165,233,0.12);color:var(--cyan);padding:.25rem .75rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}.meta-date,.meta-read{color:var(--text-muted);font-size:.82rem}.article-title{font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:700;color:var(--text-heading);line-height:1.2;margin-bottom:1.2rem}.article-subtitle{font-size:1.1rem;color:var(--text-muted);line-height:1.6;margin-bottom:2.5rem;border-left:3px solid var(--teal);padding-left:1rem}.article-body h2{font-size:1.35rem;font-weight:700;color:var(--text-heading);margin:2.5rem 0 .8rem;line-height:1.3}.article-body h3{font-size:1.1rem;font-weight:600;color:var(--text-heading);margin:2rem 0 .6rem}.article-body p{margin-bottom:1.2rem}.article-body strong{color:var(--text-heading);font-weight:600}.prompt-block{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:8px;padding:1.2rem 1.4rem;margin:1.5rem 0;font-family:'Space Mono',monospace;font-size:.85rem;line-height:1.7;white-space:pre-wrap}.tip-block{background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.2);border-radius:10px;padding:1.3rem 1.5rem;margin:2rem 0}.tip-block .tip-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--orange);margin-bottom:.5rem}.product-cta{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.8rem;margin:2.5rem 0;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}.product-cta-text{flex:1;min-width:200px}.product-cta-text h4{font-size:1rem;font-weight:700;color:var(--text-heading);margin-bottom:.3rem}.product-cta-text p{font-size:.88rem;color:var(--text-muted);margin:0}.product-cta-btn{background:var(--gradient);color:#fff;text-decoration:none;padding:.7rem 1.5rem;border-radius:8px;font-weight:600;font-size:.9rem;white-space:nowrap;transition:opacity .2s}.product-cta-btn:hover{opacity:.9}.guide-nav{display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}.guide-nav a{color:var(--text-muted);text-decoration:none;font-size:.88rem;transition:color .2s}.guide-nav a:hover{color:var(--teal)}.guide-nav .nav-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);opacity:.6;display:block;margin-bottom:.2rem}.back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--text-muted);text-decoration:none;font-size:.85rem;margin-bottom:2rem;transition:color .2s}.back-link:hover{color:var(--teal)}footer{border-top:1px solid var(--border);padding:2rem 1.5rem;text-align:center;color:var(--text-muted);font-size:.8rem}footer a{color:var(--text-muted);text-decoration:none}footer a:hover{color:var(--text)}@media(max-width:640px){.article-container{padding:2rem 1rem 3rem}.product-cta{flex-direction:column;align-items:stretch;text-align:center}.nav-links{gap:.8rem}}
+  </style>
+</head>
+<body>
+<nav><div class="nav-inner"><a href="https://practicalaico.ai/" class="nav-logo">The Practical <em>AI</em> Co.</a><div class="nav-links"><a href="https://practicalaico.ai/#products">Products</a><a href="https://practicalaico.ai/guides/">Guides</a><a href="https://practicalaico.ai/newsletter.html">Newsletter</a><a href="https://payhip.com/b/7sNzw" class="nav-cta" target="_blank">Free Guide ↗</a></div></div></nav>
+<article class="article-container">
+  <a href="https://practicalaico.ai/guides/" class="back-link">← All Guides</a>
+  <div class="article-meta">
+    <span class="meta-tag">Copilot</span>
+    <span class="meta-date">May 2026</span>
+    <span class="meta-read">5 min read</span>
+  </div>
+  <h1 class="article-title">How to Use Copilot Notebooks to Build a Presentation From Your Meeting Notes</h1>
+  <p class="article-subtitle">Microsoft 365 Copilot Notebooks can now generate a PowerPoint presentation directly from the notes and documents you've stored. Here's how to set up a notebook and get a structured deck out of your content in under 10 minutes.</p>
+  <div class="article-body">
+
+    <h2>What Copilot Notebooks are</h2>
+    <p>Copilot Notebooks is a Microsoft 365 feature that gives you a persistent workspace for a topic, project, or workstream. You add notes, paste text, attach documents, and include links — and Copilot can then analyse, summarise, and now generate structured documents and presentations from that stored content.</p>
+    <p>Think of it as a research folder that Copilot can read and turn into something usable. The key difference from a regular Word doc or OneNote page is that Copilot has explicit awareness of the content and can act on it with structured outputs.</p>
+    <p>The PowerPoint generation feature from Copilot Notebooks started rolling out in May 2026 as part of the Microsoft 365 Copilot subscription. You need a Microsoft 365 Copilot licence (business or enterprise) to access it.</p>
+
+    <h2>Step 1: Set up your Copilot Notebook</h2>
+    <p>Open <strong>microsoft365.com</strong> and look for Copilot in the app launcher (the grid icon). Select Copilot and then look for <strong>Notebooks</strong> in the left sidebar. Click <strong>+ New Notebook</strong> and give it a name that describes what you're building — for example "Q3 Strategy Presentation" or "Henderson Account Review June 2026".</p>
+    <p>Inside the notebook, you'll see a notes area and a section for references. Add your content here:</p>
+    <p>For <strong>meeting notes</strong>: paste them directly into the notes area, or copy from your Teams meeting summary if Copilot captured one automatically. Include the date and who attended.</p>
+    <p>For <strong>supporting documents</strong>: use the Add Reference function to link or upload relevant files — budget summaries, project status reports, a previous version of the presentation, any brief or background material.</p>
+    <p>You don't need to perfectly organise the content. Copilot reads what's there and constructs structure from it. Rough notes work.</p>
+
+    <h2>Step 2: Generate the PowerPoint</h2>
+    <p>Once your content is in the notebook, look for the <strong>Create</strong> or <strong>Generate</strong> button in the notebook toolbar — the exact label varies slightly by account version, but it's typically at the top of the notebook or in the Copilot chat panel within the notebook.</p>
+    <p>Select <strong>Generate Presentation</strong> (or ask in the chat: "Create a PowerPoint presentation from the content in this notebook"). Copilot will prompt you to choose a few options: the primary focus of the deck, the level of detail, the number of slides, and a design theme. Select the options that match your purpose and click Generate.</p>
+    <p>Copilot drafts the deck and opens it directly in PowerPoint. You'll get a structured presentation with slide titles, bullet points drawn from your notes, and a design applied. The content comes from your notebook — it won't fabricate things that aren't in your source material.</p>
+
+    <h2>What a good set of notes to feed in looks like</h2>
+    <p>The better the notes, the better the presentation. Here's a simple format that works well:</p>
+
+    <div class="prompt-block">Meeting: Q2 Performance Review — Henderson Account
+Date: 14 May 2026
+Attendees: Sarah (Client), Mark (AM), Priya (PM)
+
+Key outcomes discussed:
+- Project is on track — 8 of 12 milestones completed
+- Budget: $284,000 spent of $310,000 total — tracking well
+- Client concern: timeline for phase 3 delivery (flagged as a risk)
+- Agreed action: provide updated Gantt chart by 20 May
+
+Next steps:
+- Priya to update project schedule and share with Sarah
+- Mark to confirm phase 3 resource availability with ops team
+- Schedule next review for mid-June
+
+Background context:
+- Henderson is a long-standing client (8 years)
+- This is a fit-out project for their new Melbourne office
+- Phase 3 involves specialist subcontractors who have limited availability</div>
+
+    <p>Notes that follow this rough format — clear sections, real names, specific numbers, agreed actions — give Copilot enough to build a coherent deck from.</p>
+
+    <h2>What to check once it's generated</h2>
+    <p>Copilot's generated deck will be structurally sound but may need these common adjustments: slide order (it sometimes puts context slides before the key message when you want it the other way around), slide count (it may generate more slides than you need — delete any that add length without adding value), and speaker notes (these are usually useful but check them — they sometimes pad with phrasing that isn't your voice).</p>
+    <p>Plan for 10–15 minutes of editing after generation. The goal is to get a 70–80% complete first draft, not a finished deck. You're still responsible for the final version.</p>
+
+    <div class="tip-block">
+      <div class="tip-label">💡 This week's action</div>
+      <p>Next time you have a meeting that results in a presentation you need to prepare, try capturing your notes in a Copilot Notebook during or immediately after the meeting — using the format above. Then generate the first draft of the deck from the notebook. Compare how long it takes versus building from a blank template. Most people find it saves 45–90 minutes on a typical 10-slide deck.</p>
+    </div>
+
+  </div>
+  <div class="product-cta">
+    <div class="product-cta-text">
+      <h4>📝 Start Here: Meeting Notes</h4>
+      <p>AI-powered summaries, action items, and follow-ups. Instant download. A$5.00</p>
+    </div>
+    <a href="https://payhip.com/b/7sNzw" class="product-cta-btn" target="_blank">Get It Now ↗</a>
+  </div>
+  <div class="guide-nav">
+    <a href="https://practicalaico.ai/guides/"><span class="nav-label">← Back</span>All Guides</a>
+  </div>
+<div class="nl-cta-wrap">
+  <style>.nl-cta-wrap{margin-top:3rem;padding:2rem 2rem 1.8rem;background:rgba(20,184,166,0.07);border:1px solid rgba(20,184,166,0.2);border-radius:14px;text-align:center}.nl-cta-wrap .nl-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#14B8A6;margin-bottom:.5rem}.nl-cta-wrap h3{font-size:1.15rem;font-weight:700;color:#f1f5f9;margin:.4rem 0 .5rem}.nl-cta-wrap>p{font-size:.88rem;color:#94a3b8;margin:0 0 1.2rem}.nl-cta-form{display:flex;gap:.6rem;max-width:420px;margin:0 auto .8rem;flex-wrap:wrap}.nl-cta-form input{flex:1;min-width:190px;background:#0d1f3c;color:#fff;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none}.nl-cta-form input::placeholder{color:rgba(255,255,255,0.35)}.nl-cta-form input:focus{border-color:rgba(20,184,166,0.5)}.nl-cta-form button{background:linear-gradient(135deg,#14B8A6,#0EA5E9);color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;transition:opacity .2s}.nl-cta-form button:hover{opacity:.9}.nl-cta-success{display:none;color:#14B8A6;font-weight:600;font-size:.92rem;margin:.6rem 0 0}.nl-cta-note{font-size:.74rem;color:#475569;margin:.5rem 0 0}@media(max-width:480px){.nl-cta-form{flex-direction:column}.nl-cta-form input,.nl-cta-form button{width:100%}}</style>
+  <div class="nl-tag">FREE WEEKLY NEWSLETTER</div>
+  <h3>One practical AI tip, every week</h3>
+  <p>Join office workers staying ahead on AI. Free Beginners Guide included on signup. 3 minutes to read.</p>
+  <form class="nl-cta-form" id="nlCtaForm" novalidate>
+    <input type="email" id="nlCtaEmail" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe Free ↗</button>
+  </form>
+  <p class="nl-cta-success" id="nlCtaSuccess">✓ You're in! Check your inbox for the free guide.</p>
+  <p class="nl-cta-note">No spam. Unsubscribe anytime.</p>
+</div>
+<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
+</article>
+<footer><p>© 2026 The Practical AI Co. All rights reserved.</p><p style="margin-top:.5rem"><a href="https://practicalaico.ai/privacy.html">Privacy Policy</a> · <a href="https://practicalaico.ai/terms.html">Terms</a> · <a href="https://practicalaico.ai/faq.html">FAQ</a></p></footer>
+</body>
+</html>
