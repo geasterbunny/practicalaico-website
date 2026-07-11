@@ -13,7 +13,7 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 ## How It Works
 
-1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalai.co
+1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalaico.ai
 2. We build the automation and demo it running on your real work before you pay the balance
 3. The system runs on schedule with one-tap approvals; first month of monitoring and tuning included
 
@@ -37,4 +37,4 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 - Location: Sydney, Australia
 - Customers: Small businesses, solo operators and small teams
 - Newsletter: Free weekly AI tips
-- Contact: hello@practicalai.co
+- Contact: hello@practicalaico.ai
