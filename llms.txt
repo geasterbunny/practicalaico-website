@@ -1,37 +1,40 @@
 # The Practical AI Co.
 
-> The Practical AI Co. teaches white-collar office workers how to use AI tools at work — no coding, no jargon, no tech background required. We sell plain-English PDF guides, workflow templates, and setup packs through practicalaico.ai. Our audience is professionals aged 30+ who sit in front of a computer for work and want to stay ahead as AI changes their job.
+> The Practical AI Co. builds done-for-you AI automation for small businesses — social content pipelines, product listing engines, and back-office follow-up systems — delivered working at fixed prices, with human approval on everything the automation sends or publishes. Based in Australia. We also publish free plain-English guides and a weekly newsletter teaching practical AI to non-technical professionals.
 
-The Practical AI Co. is an Australian-based digital education brand focused exclusively on practical AI skills for everyday desk workers. We do not teach developers or engineers. We teach the person in accounts, marketing, operations, HR, or management who keeps hearing about AI but has no idea where to start. All products are instant-download digital guides sold via Payhip.
+The Practical AI Co. is an Australian automation studio for small businesses: cafés, trades, boutiques, online sellers, solo operators and small teams. Every system we sell is one we first built and ran on our own businesses. No sales calls — projects start with one email describing the task the owner wants automated, and we reply with a fixed-price scope.
 
-## Products
+## Services
 
-- [Beginners Guide to Using Common AI Tools](https://practicalaico.ai): Free PDF covering what AI tools actually do and which ones to start with at work. Covers ChatGPT, Claude, Gemini, Microsoft Copilot, and more.
-- [Start Here: Automation](https://practicalaico.ai): A$5.00 guide for office workers who want to stop doing repetitive tasks manually. Covers basic AI automation workflows.
-- [Start Here: Chatbots (LLMs)](https://practicalaico.ai): A$5.00 guide with ready-to-use workflows for ChatGPT, Claude, and Gemini.
-- [Start Here: Writing and Editing](https://practicalaico.ai): A$5.00 guide for writing better emails, reports, and proposals faster with AI.
-- [Start Here: Meeting Notes](https://practicalaico.ai): A$5.00 guide for AI-powered meeting summaries, action items, and follow-ups.
-- [Open Claw Setup Pack](https://practicalaico.ai): A$49.99 step-by-step click-by-click guide to installing your first AI agent. Built for non-developers.
-- [AI Fundamentals and Practical Tools](https://practicalaico.ai): A$79.00 comprehensive guide for professionals who want to understand AI and use it confidently every day at work.
-- [Privacy and Safe Use at Work](https://practicalaico.ai): A$24.99 guide on what to share and what never to type into AI tools at work.
-- [Research Aid](https://practicalaico.ai): A$9.99 guide for researching faster, summarising smarter, and citing confidently using AI.
-- [Email Help Pack](https://practicalaico.ai): A$9.99 guide for writing better emails faster with AI. Every scenario covered.
-- [Practical Prompt Templates](https://practicalaico.ai): A$4.99 copy-paste prompt templates sorted by task type for workplace use.
+- [Content Autopilot](https://practicalaico.ai/#services): From A$990 setup + A$390/month. 8–12 branded social posts a week — researched, written, designed and scheduled to Facebook, Instagram, TikTok or LinkedIn. The owner approves each week's content with one tap; nothing posts without approval.
+- [Product Listing Engine](https://practicalaico.ai/#services): From A$690 per catalogue run. For Etsy, Shopify and print-on-demand sellers — turns a product list into finished listings (titles, tags, descriptions, mockup images) with an automated quality gate that reads every image and holds anything with a typo or print error. Printify integrated.
+- [Back-Office Autopilot](https://practicalaico.ai/#services): From A$1,490 setup + A$490/month. Quote and invoice follow-ups, review responses and appointment reminders drafted automatically and queued for one-tap owner approval, plus a daily briefing of what needs attention.
+- Custom builds: scoped at a fixed price from a plain-English description of the task.
+
+## How It Works
+
+1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalai.co
+2. We build the automation and demo it running on your real work before you pay the balance
+3. The system runs on schedule with one-tap approvals; first month of monitoring and tuning included
+
+## Free Resources
+
+- 25+ free plain-English guides on using ChatGPT, Claude, Gemini and Microsoft Copilot at work: https://practicalaico.ai/guides/
+- Free weekly newsletter with practical AI tips (3-minute reads): https://practicalaico.ai/newsletter.html
 
 ## Topics We Cover
 
+- Done-for-you AI automation for small business
+- Social media content automation with human approval gates
+- E-commerce listing automation (Etsy, Shopify, Printify)
+- Back-office automation: follow-ups, reviews, reminders
 - How to use ChatGPT, Claude, Gemini, and Microsoft Copilot at work
-- AI for emails, meeting notes, research, writing, and editing
-- AI automation for non-technical office workers
 - Privacy and safe use of AI in the workplace
-- Prompt engineering for beginners in plain English
-- Setting up AI agents without coding knowledge
-- AI fundamentals explained for non-technical professionals
 
 ## Company Information
 
 - Website: https://practicalaico.ai
 - Location: Sydney, Australia
-- Audience: White-collar professionals aged 30+ who use a computer at work
-- Newsletter: Free weekly AI tips for office workers
-- Contact: Available via website
+- Customers: Small businesses, solo operators and small teams
+- Newsletter: Free weekly AI tips
+- Contact: hello@practicalai.co
