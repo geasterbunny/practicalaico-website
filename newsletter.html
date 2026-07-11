@@ -644,11 +644,20 @@ Create:
   if (!form) return;
   form.addEventListener('submit', e => {
     e.preventDefault();
+    const email = form.querySelector('input[type="email"]').value;
+    if (!email) return;
     const btn = form.querySelector('button');
     const orig = btn.textContent;
-    btn.textContent = "✓ You're in!";
-    btn.style.background = '#14B8A6';
-    setTimeout(() => { btn.textContent = orig; btn.style.background = ''; form.reset(); }, 3000);
+    const d = new FormData();
+    d.append('fields[email]', email);
+    d.append('ml-submit', '1');
+    d.append('anticsrf', 'true');
+    fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe', { method: 'POST', body: d, mode: 'no-cors' })
+      .finally(() => {
+        btn.textContent = "✓ You're in!";
+        btn.style.background = '#14B8A6';
+        setTimeout(() => { btn.textContent = orig; btn.style.background = ''; form.reset(); }, 3000);
+      });
   });
 });
 </script>
