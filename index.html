@@ -1,482 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU" class="js">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Practical AI Co. — Done-For-You AI Automation for Small Business</title>
-  <meta name="description" content="We build AI automations that handle your repetitive work — social content, product listings, follow-ups — with your approval on everything. Fixed prices, built in Australia.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    .inline-testimonial {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-left: 3px solid var(--teal, #00d4aa);
-      border-radius: 8px;
-      padding: 12px 14px;
-      margin: 16px 0 14px;
-    }
-    .inline-testimonial p {
-      font-size: 13px;
-      font-style: italic;
-      color: #c8c8e0;
-      margin: 4px 0 6px;
-      line-height: 1.5;
-    }
-    .inline-testimonial span {
-      font-size: 11px;
-      color: #7777aa;
-      font-weight: 600;
-    }
-    .inline-stars {
-      color: #ffb830;
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
-    .section-trust {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 10px;
-      font-size: 13px;
-      font-style: italic;
-      color: #8888aa;
-    }
-    .section-trust .inline-stars { font-size: 13px; flex-shrink: 0; }
-    .email-perks {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin: 20px 0 24px;
-      text-align: left;
-      max-width: 460px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .email-perk {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 14px;
-      color: #b8b8d0;
-    }
-    .perk-icon {
-      font-size: 16px;
-      flex-shrink: 0;
-      width: 24px;
-      text-align: center;
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Practical AI Co. — AI Automation Studio, Sydney</title>
+<meta name="description" content="We build the systems that do your business's repeatable work — content, listings, follow-ups — and hand them over running. Fixed prices, built in Australia, and nothing ships without your approval.">
+<link rel="canonical" href="https://practicalaico.ai/">
 
-    /* CLAUDE PACK SECTION */
-    .claude-pack-section{position:relative;z-index:1;padding:100px 0 80px;background:linear-gradient(180deg,transparent,rgba(20,184,166,0.03),rgba(14,165,233,0.03),transparent)}
-    .claude-pack-section::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent 5%,#14B8A6 30%,#0EA5E9 70%,transparent 95%)}
-    .release-ribbon{display:flex;align-items:center;justify-content:center;gap:12px;padding:12px 24px;margin:0 auto 40px;max-width:480px;border-radius:50px;background:rgba(20,184,166,0.08);border:1px solid rgba(20,184,166,0.2);font-size:0.82rem;letter-spacing:0.08em}
-    .ribbon-text{color:#14B8A6;font-weight:700}
-    .ribbon-pulse{width:8px;height:8px;border-radius:50%;background:#14B8A6;animation:ribbonPulse 2s ease-in-out infinite}
-    @keyframes ribbonPulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(20,184,166,0.4)}50%{opacity:0.5;box-shadow:0 0 0 8px rgba(20,184,166,0)}}
-    .bundle-hero{margin:0 auto 50px;max-width:1000px}
-    .bundle-hero-inner{display:grid;grid-template-columns:300px 1fr;gap:48px;align-items:center;padding:40px;border-radius:22px;background:rgba(255,255,255,0.04);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(20,184,166,0.15);position:relative;overflow:hidden}
-    .bundle-hero-inner::after{content:'';position:absolute;top:-100px;right:-100px;width:250px;height:250px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,0.06),transparent 70%);pointer-events:none}
-    .bundle-visual{position:relative}
-    .bundle-stack{position:relative;width:260px;height:340px;margin:0 auto}
-    .bundle-book{position:absolute;width:230px;height:300px;border-radius:14px;overflow:hidden;background-color:#0f1f38;box-shadow:0 8px 30px rgba(0,0,0,0.4);transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1)}
-    .bundle-book-img{width:100%;height:100%;object-fit:cover;display:block}
-    .bundle-book .book-label{position:absolute;bottom:12px;left:12px;padding:4px 10px;border-radius:6px;background:rgba(6,13,26,0.7);backdrop-filter:blur(8px);color:#14B8A6;font-size:0.68rem;font-weight:700;letter-spacing:0.06em}
-    .book-3{top:0;left:0;transform:rotate(-4deg);z-index:1}
-    .book-2{top:8px;left:12px;transform:rotate(-1deg);z-index:2}
-    .book-1{top:16px;left:24px;transform:rotate(2deg);z-index:3}
-    .bundle-hero:hover .book-3{transform:rotate(-8deg) translateX(-12px)}
-    .bundle-hero:hover .book-2{transform:rotate(0deg) translateY(-6px)}
-    .bundle-hero:hover .book-1{transform:rotate(5deg) translateX(12px)}
-    .bundle-save-badge{position:absolute;top:-6px;right:-6px;z-index:10;padding:8px 14px;border-radius:8px;background:#F97316;color:#fff;font-size:0.78rem;font-weight:800;letter-spacing:0.03em;box-shadow:0 4px 16px rgba(249,115,22,0.35);transform:rotate(3deg)}
-    .bundle-badges{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
-    .badge-new{padding:5px 12px;border-radius:6px;background:#14B8A6;color:#060d1a;font-size:0.68rem;font-weight:800;letter-spacing:0.08em}
-    .badge-offer{padding:5px 12px;border-radius:6px;background:#F97316;color:#fff;font-size:0.68rem;font-weight:800;letter-spacing:0.08em}
-    .badge-sm{position:absolute;top:12px;right:12px;padding:3px 8px;font-size:0.6rem;z-index:5}
-    .bundle-title{font-size:1.8rem;font-weight:800;letter-spacing:-0.03em;margin:0 0 6px;color:#F0F6FF}
-    .bundle-subtitle{color:#7A90B0;font-size:0.95rem;margin:0 0 24px}
-    .bundle-includes{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
-    .bundle-include-item{display:flex;gap:14px;align-items:flex-start}
-    .include-num{flex-shrink:0;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:rgba(20,184,166,0.1);border:1px solid rgba(20,184,166,0.2);color:#14B8A6;font-size:0.72rem;font-weight:800}
-    .bundle-include-item strong{display:block;color:#F0F6FF;font-size:0.92rem;margin-bottom:2px}
-    .bundle-include-item div > span{color:#7A90B0;font-size:0.8rem;line-height:1.4}
-    .bundle-pricing{margin-bottom:20px;padding:16px 0;border-top:1px solid rgba(255,255,255,0.09)}
-    .bundle-price-was{color:#7A90B0;font-size:0.85rem;text-decoration:line-through;margin-bottom:4px}
-    .bundle-price-now{font-size:2.2rem;font-weight:800;letter-spacing:-0.03em;background:linear-gradient(90deg,#14B8A6,#0EA5E9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:6px}
-    .bundle-price-note{color:#7A90B0;font-size:0.77rem}
-    .bundle-cta{display:inline-flex;width:100%;justify-content:center;padding:16px 32px;font-size:1rem;font-weight:700;border-radius:12px;background:linear-gradient(135deg,#14B8A6,#0EA5E9);color:#060d1a;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;box-shadow:0 4px 24px rgba(20,184,166,0.3);cursor:pointer;border:none;font-family:'Plus Jakarta Sans',sans-serif}
-    .bundle-cta:hover{transform:translateY(-2px);box-shadow:0 8px 36px rgba(20,184,166,0.45)}
-    .claude-books-header{text-align:center;margin-bottom:28px}
-    .books-or{color:#7A90B0;font-size:0.88rem;font-weight:500;position:relative;display:inline-block}
-    .books-or::before,.books-or::after{content:'';position:absolute;top:50%;width:60px;height:1px;background:rgba(255,255,255,0.09)}
-    .books-or::before{right:calc(100% + 16px)}
-    .books-or::after{left:calc(100% + 16px)}
-    .claude-books-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1000px;margin:0 auto}
-    .claude-book-card{border-radius:22px;overflow:hidden;background:rgba(255,255,255,0.04);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.09);transition:all 0.3s ease}
-    .claude-book-card:hover{transform:translateY(-4px);border-color:rgba(20,184,166,0.28);box-shadow:0 16px 48px rgba(0,0,0,0.4),0 0 40px rgba(20,184,166,0.2)}
-    .claude-book-img{position:relative;overflow:hidden;background-color:#0f1f38}
-    .claude-book-img img{width:100%;display:block}
-    .book-number{position:absolute;bottom:10px;left:10px;padding:4px 10px;border-radius:6px;background:rgba(6,13,26,0.7);backdrop-filter:blur(8px);color:#14B8A6;font-size:0.65rem;font-weight:800;letter-spacing:0.1em}
-    .claude-book-body{padding:22px 22px 24px}
-    .claude-book-body h3{font-size:1.1rem;font-weight:700;letter-spacing:-0.02em;color:#F0F6FF;margin:0 0 10px}
-    .claude-book-body p{color:#7A90B0;font-size:0.83rem;line-height:1.6;margin:0 0 16px}
-    .book-features{list-style:none;padding:0;margin:0 0 18px}
-    .book-features li{color:#7A90B0;font-size:0.8rem;padding:5px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
-    .book-features li:last-child{border-bottom:none}
-    .claude-book-footer{display:flex;align-items:center;justify-content:space-between;padding-top:16px;border-top:1px solid rgba(255,255,255,0.09)}
-    .book-price{font-size:1.3rem;font-weight:800;letter-spacing:-0.03em;background:linear-gradient(90deg,#14B8A6,#0EA5E9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    @media(max-width:960px){
-      .bundle-hero-inner{grid-template-columns:1fr;text-align:center}
-      .bundle-stack{width:220px;height:290px;margin:0 auto}
-      .bundle-book{width:200px;height:260px}
-      .bundle-include-item{text-align:left}
-      .claude-books-grid{grid-template-columns:1fr;max-width:400px;margin:0 auto}
-    }
-    @media(max-width:640px){
-      .claude-pack-section{padding:70px 0 50px}
-      .bundle-hero-inner{padding:24px;gap:28px}
-      .bundle-title{font-size:1.4rem}
-      .bundle-price-now{font-size:1.8rem}
-      .release-ribbon{font-size:0.72rem;padding:10px 16px;max-width:100%}
-      .bundle-stack{width:180px;height:240px}
-      .bundle-book{width:160px;height:210px}
-    }
-  </style>
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2264400');
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Practical AI Co.">
+<meta property="og:url" content="https://practicalaico.ai/">
+<meta property="og:title" content="The Practical AI Co. — AI Automation Studio, Sydney">
+<meta property="og:description" content="The work that repeats should run itself. Done-for-you AI automation at fixed prices — and FRANK, the operations core for people running their own show.">
+<meta property="og:image" content="https://practicalaico.ai/images/frank-hud-poster.jpg">
+<meta property="og:locale" content="en_AU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Practical AI Co. — AI Automation Studio, Sydney">
+<meta name="twitter:description" content="The work that repeats should run itself. Fixed-price AI automation, built in Australia.">
+<meta name="twitter:image" content="https://practicalaico.ai/images/frank-hud-poster.jpg">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='none' stroke='%2314B8A6' stroke-width='2' opacity='.55'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%230EA5E9' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%2314B8A6'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/home.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "The Practical AI Co.",
+  "url": "https://practicalaico.ai/",
+  "email": "hello@practicalaico.ai",
+  "description": "AI automation studio building done-for-you systems for small businesses, at fixed prices, with human approval on everything that sends, spends or publishes.",
+  "areaServed": "AU",
+  "address": { "@type": "PostalAddress", "addressLocality": "Sydney", "addressCountry": "AU" },
+  "makesOffer": [
+    { "@type": "Offer", "name": "Content Autopilot", "priceCurrency": "AUD", "price": "990" },
+    { "@type": "Offer", "name": "Product Listing Engine", "priceCurrency": "AUD", "price": "690" },
+    { "@type": "Offer", "name": "Back-Office Autopilot", "priceCurrency": "AUD", "price": "1490" }
+  ]
+}
 </script>
-<!-- End MailerLite Universal --></head>
+<script>document.documentElement.classList.add('js');</script>
+</head>
 <body>
-<canvas id="bgCanvas"></canvas>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="/" class="nav-logo">
-      <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H9l-4 3v-3H4a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z" fill="rgba(6,13,26,0.5)" stroke="white" stroke-width="1.5"/><path d="M14 9l2 3 3 1.5-3 1.5-2 3-2-3-3-1.5 3-1.5z" fill="white"/></svg></div>
-      <span class="nav-brand">The Practical <em class="grad-text">AI</em> Co.</span>
-    </a>
-    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="guides/">Guides</a></li>
-      <li><a href="newsletter.html">Newsletter</a></li>
-      <li><a href="#enquire" class="nav-cta">Start a Project</a></li>
-    </ul>
+<canvas id="stage" aria-hidden="true"></canvas>
+<div class="bloom" id="bloom" aria-hidden="true"></div>
+<div class="grid-veil" aria-hidden="true"></div>
+<div class="veil" aria-hidden="true"></div>
+<div class="boot-scan" aria-hidden="true"></div>
+
+<div class="hud" aria-hidden="true">
+  <span class="corner c-tl"></span><span class="corner c-tr"></span>
+  <span class="corner c-bl"></span><span class="corner c-br"></span>
+
+  <div class="hud-panel hud-tl">
+    <div class="hud-id"><span class="dot"></span> FRANK</div>
+    <div class="hud-sub">operations core &middot; <b id="hudState">booting</b></div>
+    <div class="hud-sub">approval gate &middot; <b>armed</b></div>
   </div>
-</nav>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-mesh"></div>
-  <div class="hero-grid"></div>
-  <div class="container">
-    <div class="hero-badge"><span class="badge-pulse"></span>Done-for-you AI automation · Built in Australia</div>
-    <h1 class="hero-title">
-      <span class="line">The same tasks eat your week.</span>
-      <span class="line grad-text">We make them run themselves.</span>
-    </h1>
-    <p class="hero-sub">We build AI automations for small businesses — social content, product listings, follow-ups — delivered working, at a fixed price. And nothing goes out without your one-tap approval.</p>
-    <div class="hero-actions">
-      <a href="#enquire" class="btn btn-primary">Tell Us What to Automate <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-      <a href="#services" class="btn btn-glass">See the Packages</a>
-    </div>
-    <div class="hero-stats">
-      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Fixed-price packages</span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">100%</span><span class="stat-label">You approve everything</span></div>
-      <div class="stat-divider"></div>
-      <div class="stat"><span class="stat-num">0</span><span class="stat-label">Lock-in contracts</span></div>
+  <div class="hud-panel hud-tr">
+    <div class="hud-row"><span>SECTION</span><span id="hudSec">&mdash;</span></div>
+    <div class="hud-row"><span>DEPTH</span><span id="hudDepth">0.00</span></div>
+    <div class="hud-row hot"><span>QUEUE</span><span id="hudQueue">0 held</span></div>
+    <div class="hud-row"><span>RENDER</span><span id="hudFps">&mdash; fps</span></div>
+  </div>
+
+  <div class="dock" id="dock" style="top:42%">
+    <div class="dock-idx" id="dockIdx">01 / 07</div>
+    <div class="dock-title" id="dockTitle">Hero</div>
+    <div class="dock-read" id="dockRead">core online</div>
+    <span class="dock-line"></span>
+  </div>
+
+  <div class="hud-panel hud-bl">
+    <div class="log-cap"><span>ACTIVITY</span><span id="hudClock">--:--</span></div>
+    <ul class="log" id="hudLog"></ul>
+    <div class="held" id="hudHeld">
+      <span class="held-txt" id="hudHeldTxt">1 ITEM HELD<br>awaiting operator</span>
+      <button id="hudApprove" type="button">APPROVE</button>
     </div>
   </div>
-</section>
 
-<!-- VIDEO INTRO -->
-<section class="video-intro">
-  <div class="container video-intro-grid">
-    <div class="video-wrapper video-wrapper-sm reveal">
-      <video autoplay muted loop playsinline preload="auto" id="frankVideo">
-        <source src="/videos/frank.mp4" type="video/mp4">
-        <source src="videos/frank.mp4" type="video/mp4">
-      </video>
-      <div class="video-controls">
-        <button class="vid-play-btn" id="frankPlayBtn" onclick="toggleFrank()">⏸</button>
-        <button class="vid-sound-btn" id="frankSoundBtn" onclick="toggleFrankSound()">🔇</button>
-      </div>
-      <div class="video-label">👋 Meet Us</div>
+  <div class="hud-panel hud-br">
+    <div class="ring">
+      <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true">
+        <circle class="bg" cx="32" cy="32" r="28"></circle>
+        <circle class="fg" id="hudRing" cx="32" cy="32" r="28" stroke-dasharray="175.9" stroke-dashoffset="175.9"></circle>
+      </svg>
+      <div class="pct" id="hudPct">0%</div>
     </div>
-    <div class="video-text reveal">
-      <div class="section-tag">WHO WE ARE</div>
-      <h2>We automate our own businesses <span class="grad-text">first.</span></h2>
-      <p>Every system we sell started as something we built and ran for ourselves — content pipelines, product listing engines, approval-gated assistants. You're not buying theory. You're buying the working version.</p>
-      <a href="#services" class="btn btn-primary">See What We Build ↗</a>
-    </div>
-  </div>
-</section>
-
-<!-- STAT BUBBLES -->
-<div class="stat-bubbles">
-  <div class="bubble-inner">
-    <div class="bubble reveal">
-      <div class="bubble-icon">🔁</div>
-      <p>If you do a task the same way every week, it can be automated</p>
-    </div>
-    <div class="bubble reveal">
-      <div class="bubble-icon">🛡️</div>
-      <p>Every automation we ship waits for your approval before anything goes out</p>
-    </div>
-    <div class="bubble reveal">
-      <div class="bubble-icon">💬</div>
-      <p>One email starts it: tell us the task you hate doing most</p>
-    </div>
+    <div class="cap">SCROLL TRACE</div>
   </div>
 </div>
 
-<!-- FREE GUIDE — full width thumb, no text above it -->
-<section class="free-section">
-  <div class="container">
-    <div class="free-inner">
-      <div class="free-text reveal">
-        <div class="free-tag">FREE DOWNLOAD</div>
-        <h2>Beginners Guide to Using<br>Common <span class="grad-text">AI Tools</span></h2>
-        <p>The fastest way to understand what AI tools actually do — and which ones to start with at work. Zero fluff. Instant download.</p>
-        <a href="#email-section" class="btn btn-primary">Download Free Now ↗</a>
-      </div>
-      <a href="#email-section" class="guide-float reveal">
-        <img src="images/thumb-beginners.svg" alt="Free Beginners Guide to AI Tools" class="guide-float-img">
-        <div class="guide-float-cta">Click to download free ↗</div>
-      </a>
+<div class="hud-mobile" aria-hidden="true">
+  <span class="now" id="mNow">FRANK &middot; booting</span>
+  <span class="bar"><i id="mBar"></i></span>
+  <span id="mPct">0%</span>
+</div>
+
+<div class="page">
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#hero">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#14B8A6"/><stop offset="1" stop-color="#0EA5E9"/>
+        </linearGradient></defs>
+        <circle cx="16" cy="16" r="14" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity=".55"/>
+        <circle cx="16" cy="16" r="8" fill="none" stroke="url(#g1)" stroke-width="1.5"/>
+        <circle cx="16" cy="16" r="2.6" fill="url(#g1)"/>
+      </svg>
+      The Practical AI Co.
+    </a>
+    <ul class="nav-links">
+      <li><a href="#build">What we build</a></li>
+      <li><a href="#gate">The gate</a></li>
+      <li><a href="#proof">Proof</a></li>
+      <li><a href="#frank">FRANK</a></li>
+      <li><a href="guides/index.html">Guides</a></li>
+    </ul>
+    <a class="nav-cta" href="#start">START A PROJECT</a>
+  </div>
+</nav>
+
+<section id="hero" data-sec="HERO" data-title="Hero" data-read="core online &middot; gate armed"
+         data-log="core online|operator profile loaded|3 systems indexed|approval gate armed">
+  <div class="wrap">
+    <div class="eyebrow rise" style="--d:1.15s">AI AUTOMATION STUDIO &middot; SYDNEY</div>
+    <h1 class="rise" style="--d:1.28s">The work that<br>repeats should<br><span class="q">run itself.</span></h1>
+    <p class="lede rise" style="--d:1.44s">We build the systems that do a business's repeatable work &mdash; content, listings, follow-ups &mdash; and hand them over <b>running</b>. And we build <b>FRANK</b>, the operations core for people running their own show. <b>Nothing ships without your approval.</b></p>
+    <div class="hero-actions rise" style="--d:1.58s">
+      <a class="btn btn-p" href="#start">TELL US THE TASK &rarr;</a>
+      <a class="btn btn-s" href="#frank">MEET FRANK</a>
+    </div>
+    <div class="stats rise" style="--d:1.72s">
+      <div class="stat"><b>3</b><span>FIXED-PRICE BUILDS</span></div>
+      <div class="stat"><b>44</b><span>SKILLS IN FRANK</span></div>
+      <div class="stat"><b>523</b><span>AUTOMATED TESTS</span></div>
+      <div class="stat"><b>0</b><span>LOCK-IN CONTRACTS</span></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="claude-pack-section" id="services">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">WHAT WE BUILD</div>
-      <h2 class="section-title">Three packages. Fixed prices.<br><span class="grad-text">Delivered working.</span></h2>
-      <p class="section-sub">Every package is a system we already run on our own businesses — adapted to yours, tested on your real work, and handed over running. Nothing publishes or sends without your approval.</p>
-    </div>
-    <div class="claude-books-grid">
-      <div class="claude-book-card reveal">
-        <div class="claude-book-body">
-          <div class="start-icon" style="font-size:2rem;margin-bottom:10px">📣</div>
-          <h3>Content Autopilot</h3>
-          <p>Your business posts consistently without you touching it. Topics researched, posts written and designed in your branding, scheduled to your channels — you approve the week's content from your phone in two minutes.</p>
-          <ul class="book-features"><li>✓ 8–12 branded posts a week, written &amp; designed</li><li>✓ Scheduled to Facebook, Instagram, TikTok or LinkedIn</li><li>✓ One-tap weekly approval — nothing posts without you</li><li>✓ Monthly tune-up based on what performed</li></ul>
-          <div class="claude-book-footer"><span class="book-price">from A$990 setup <span style="font-size:.72em;color:var(--muted);display:block">+ A$390/month</span></span><a href="#enquire" class="btn btn-primary btn-sm">Start This Project</a></div>
-        </div>
-      </div>
-      <div class="claude-book-card reveal">
-        <div class="claude-book-body">
-          <div class="start-icon" style="font-size:2rem;margin-bottom:10px">🏷️</div>
-          <h3>Product Listing Engine</h3>
-          <p>For Etsy, Shopify and print-on-demand sellers. Turn a product list into finished listings — titles, tags, descriptions and mockup images — with an automated quality gate that reads every image and holds anything with an error.</p>
-          <ul class="book-features"><li>✓ Full listings generated: copy, tags, mockups</li><li>✓ Automated QA catches typos &amp; print errors before they go live</li><li>✓ Printify / print-on-demand integrated</li><li>✓ Batch runs: launch a whole product drop at once</li></ul>
-          <div class="claude-book-footer"><span class="book-price">from A$690 <span style="font-size:.72em;color:var(--muted);display:block">per catalogue run</span></span><a href="#enquire" class="btn btn-primary btn-sm">Start This Project</a></div>
-        </div>
-      </div>
-      <div class="claude-book-card reveal">
-        <div class="claude-book-body">
-          <div class="start-icon" style="font-size:2rem;margin-bottom:10px">📥</div>
-          <h3>Back-Office Autopilot</h3>
-          <p>The follow-ups that fall through the cracks — quotes, reviews, reminders — drafted automatically and queued for your one-tap approval. Plus a daily briefing of what actually needs your attention.</p>
-          <ul class="book-features"><li>✓ Quote &amp; invoice follow-ups drafted for you</li><li>✓ Review responses and appointment reminders</li><li>✓ Approve or edit each message with one tap</li><li>✓ Daily briefing: what came in, what needs you</li></ul>
-          <div class="claude-book-footer"><span class="book-price">from A$1,490 setup <span style="font-size:.72em;color:var(--muted);display:block">+ A$490/month</span></span><a href="#enquire" class="btn btn-primary btn-sm">Start This Project</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="claude-books-header reveal" style="margin-top:28px"><p class="books-or">Need something different? We scope custom builds at a fixed price — <a href="#enquire" style="color:var(--teal)">tell us the task</a>.</p></div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="section" id="how-it-works">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">HOW IT WORKS</div>
-      <h2 class="section-title">One email to start.<br><span class="grad-text">A working system in weeks.</span></h2>
-      <p class="section-sub">No sales calls. No discovery workshops. Just show us the task.</p>
-    </div>
-    <div class="start-grid">
-      <div class="start-card reveal"><div class="start-icon">✉️</div><h3>1. Tell us the task</h3><p>Email us the job you hate — "I lose Sundays to social posts", "listings take hours". Plain English, screenshots welcome.</p></div>
-      <div class="start-card reveal"><div class="start-icon">🔧</div><h3>2. We build it &amp; demo it</h3><p>We build the automation and show it running on your real work — not a slide deck. You see exactly what it does before you pay the balance.</p></div>
-      <div class="start-card reveal"><div class="start-icon">✅</div><h3>3. You approve, it runs</h3><p>The system runs on schedule and queues everything for your one-tap approval. First month of monitoring and tuning included.</p></div>
-      <div class="start-card reveal"><div class="start-icon">💬</div><h3>Not sure it's automatable?</h3><p>Email it to us anyway. If it can't be automated well, we'll tell you straight — and won't charge you to find out.</p></div>
+<section id="build" data-sec="MANIFEST" data-title="What we build" data-read="3 packages &middot; fixed price"
+         data-log="reading service manifest|3 packages &middot; fixed price|delivery: working system">
+  <div class="wrap">
+    <div class="eyebrow rv">WHAT WE BUILD</div>
+    <h2 class="rv">Three systems.<br>Fixed prices. Delivered running.</h2>
+    <p class="lede rv">Every one of these started as something we built for our own businesses first. You're not buying a proposal &mdash; you're buying the version that already works, adapted to you.</p>
+    <div class="cards">
+      <article class="card rv">
+        <span class="idx">SYS &middot; 01</span>
+        <h3>Content Autopilot</h3>
+        <p>Your business posts consistently without you touching it. Topics researched, posts written and designed in your branding, scheduled to your channels.</p>
+        <ul>
+          <li>8&ndash;12 branded posts a week, written and designed</li>
+          <li>Scheduled to Facebook, Instagram, TikTok or LinkedIn</li>
+          <li>One-tap weekly approval from your phone</li>
+        </ul>
+        <div class="price">FROM A$990 SETUP<s>+ A$390 / MONTH</s></div>
+      </article>
+      <article class="card rv">
+        <span class="idx">SYS &middot; 02</span>
+        <h3>Product Listing Engine</h3>
+        <p>For Etsy, Shopify and print-on-demand sellers. A product list goes in; finished listings come out &mdash; with a quality gate that reads every image.</p>
+        <ul>
+          <li>Copy, tags and mockups generated per product</li>
+          <li>QA catches typos and print errors before they go live</li>
+          <li>Batch runs: launch a whole drop at once</li>
+        </ul>
+        <div class="price">FROM A$690<s>PER CATALOGUE RUN</s></div>
+      </article>
+      <article class="card rv">
+        <span class="idx">SYS &middot; 03</span>
+        <h3>Back-Office Autopilot</h3>
+        <p>The follow-ups that fall through the cracks &mdash; quotes, reviews, reminders &mdash; drafted automatically and queued for your approval.</p>
+        <ul>
+          <li>Quote and invoice follow-ups drafted for you</li>
+          <li>Review responses and appointment reminders</li>
+          <li>Daily briefing: what came in, what needs you</li>
+        </ul>
+        <div class="price">FROM A$1,490 SETUP<s>+ A$490 / MONTH</s></div>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- PROOF -->
-<section class="products-section" id="proof">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">PROOF, NOT PROMISES</div>
-      <h2 class="section-title">Systems we've built —<br><span class="grad-text">running every week.</span></h2>
-      <p class="section-sub">We're a new studio, so we won't show you a wall of invented client logos. What we can show you is real systems running unattended on our own businesses — and we'll demo any of them on request.</p>
-    </div>
-    <div class="products-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
-      <div class="product-card reveal">
-        <div class="product-content">
-          <h3>A weekly content pipeline</h3>
-          <p>Researches topics, writes scripts, renders branded videos with captions, runs quality checks, and schedules ten posts a week — unattended, every Sunday night.</p>
-          <ul class="product-includes"><li>✓ Research → script → design → schedule, end to end</li><li>✓ Automated quality gates on every video</li><li>✓ Runs while we sleep</li></ul>
-        </div>
+<section id="gate" data-sec="GATE" data-title="The approval gate" data-read="1 item held &middot; awaiting you"
+         data-log="queue: 1 item held|holding for operator|nothing sends unattended" data-warn="1">
+  <div class="wrap">
+    <div class="eyebrow rv">THE APPROVAL GATE</div>
+    <h2 class="rv">Every system we ship<br>stops here and waits <span class="q">for you.</span></h2>
+    <p class="lede rv">This is the part most AI agencies skip. Anything that sends, spends or publishes gets held in a queue and waits for a human. Here's the real mechanic &mdash; <b>there's an item held right now.</b></p>
+
+    <div class="gate-box rv">
+      <div class="gate-head">
+        <span>OUTBOUND QUEUE &middot; content-autopilot</span>
+        <span class="st" id="gateSt"><i></i> 1 HELD</span>
       </div>
-      <div class="product-card reveal">
-        <div class="product-content">
+      <div class="gate-body">
+        <div class="queued" id="q1">
+          <span class="tag" id="q1tag">HELD</span>
+          <div>
+            <h4>Instagram &middot; Thursday 7:30pm</h4>
+            <p id="q1p">Carousel, 4 slides &mdash; drafted, designed, QA passed. Waiting on you.</p>
+          </div>
+          <div class="act" id="q1act">
+            <button class="mini" type="button">EDIT</button>
+            <button class="mini go" type="button" id="q1go">APPROVE</button>
+          </div>
+        </div>
+        <p class="note" id="gateNote">Nothing in this queue moves until a person taps approve. That rule is not configurable &mdash; it's how we build.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proof" data-sec="PROOF" data-title="Proof, not promises" data-read="systems built &middot; verifiable"
+         data-log="loading build record|3 systems on file|demo available on request">
+  <div class="wrap">
+    <div class="eyebrow rv">PROOF, NOT PROMISES</div>
+    <h2 class="rv">Systems we've built<br>and actually run.</h2>
+    <p class="lede rv">We're a small studio, so there's no wall of invented client logos here. What there is: systems that ran unattended on our own businesses, and we'll demo any of them live on request.</p>
+
+    <div class="proof-list">
+      <article class="proof rv">
+        <div class="proof-meta"><b>44</b>SKILLS<br>523 TESTS</div>
+        <div>
+          <h3>An approval-gated operations core</h3>
+          <p>Drafts emails, builds a daily briefing, tracks spend against budget, watches the overnight jobs and reports the ones that failed &mdash; and parks anything involving money or the outside world for one-tap human approval.</p>
+          <span class="st live"><i></i> RUNNING TODAY</span>
+        </div>
+      </article>
+      <article class="proof rv">
+        <div class="proof-meta"><b>41</b>LIVE LISTINGS<br>4 DROPS</div>
+        <div>
           <h3>A product listing engine</h3>
-          <p>Took an idea list to 40+ live Etsy listings across four product drops: designs generated, mockups created, listings written — with a quality gate that reads every image and holds anything with a print error.</p>
-          <ul class="product-includes"><li>✓ 40+ listings shipped across 4 drops</li><li>✓ Catches typos on product images automatically</li><li>✓ Printify integrated end to end</li></ul>
+          <p>Took an idea list to live Etsy listings across four product drops: designs generated, mockups created, listings written &mdash; with a quality gate that reads every image and holds anything with a print error before it can go live.</p>
+          <span class="st live"><i></i> RUNS ON DEMAND</span>
+        </div>
+      </article>
+      <article class="proof rv">
+        <div class="proof-meta"><b>230</b>VIDEOS<br>END TO END</div>
+        <div>
+          <h3>A weekly content pipeline</h3>
+          <p>Researched topics, wrote scripts, rendered branded vertical video with captions, ran automated quality checks and scheduled the week's posts &mdash; unattended. Built, run, and since retired when we changed direction.</p>
+          <span class="st paused"><i></i> BUILT &middot; NOW PAUSED</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="frank" data-sec="FRANK" data-title="FRANK" data-read="44 skills &middot; 523 tests green"
+         data-log="FRANK &middot; 44 skills registered|523 tests green|money + outbound: gated">
+  <div class="wrap">
+    <div class="eyebrow rv">THE FLAGSHIP</div>
+    <h2 class="rv">FRANK runs the<br>business side of<br>your business.</h2>
+    <div class="frank-grid">
+      <div class="rv">
+        <p class="lede">An operations core that sits on your machine and does the running-a-company work: drafts the emails, builds the morning briefing, tracks what you're spending against budget, watches the jobs that are meant to run overnight and tells you when one didn't.</p>
+        <p class="lede">It has 44 working skills and 523 automated tests behind them. Anything involving money or the outside world stops at the gate.</p>
+        <div class="skill-list">
+          <div class="skill"><i></i> morning briefing</div>
+          <div class="skill"><i></i> email triage + drafts</div>
+          <div class="skill"><i></i> spend vs budget</div>
+          <div class="skill"><i></i> job watchdog</div>
+          <div class="skill"><i></i> calendar sweep</div>
+          <div class="skill"><i></i> research runs</div>
+          <div class="skill"><i></i> approval queue</div>
+          <div class="skill"><i></i> nightly reports</div>
         </div>
       </div>
-      <div class="product-card reveal">
-        <div class="product-content">
-          <h3>An approval-gated assistant</h3>
-          <p>A 44-skill assistant that drafts emails, builds daily briefings, tracks spend against budget and runs our office — and parks anything involving money or the outside world for one-tap human approval.</p>
-          <ul class="product-includes"><li>✓ 44 working skills, 76 automated tests</li><li>✓ Approval gate on anything that sends or spends</li><li>✓ Live cost tracking with daily budget alerts</li></ul>
+      <div class="waitlist rv">
+        <h3>Early access</h3>
+        <p>FRANK isn't for sale yet. We're building it in the open and letting a first group in early. Put your email down and you'll get the demo before anyone else.</p>
+        <form class="field" method="post" target="_blank"
+              action="https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe">
+          <input type="email" name="fields[email]" required autocomplete="email"
+                 placeholder="you@yourbusiness.com.au" aria-label="Email address">
+          <input type="hidden" name="fields[signup_source]" value="frank-early-access">
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <button class="btn btn-p" type="submit">JOIN &rarr;</button>
+        </form>
+        <p class="note">No spam. One email when the demo is ready.</p>
+      </div>
+    </div>
+
+    <div class="screen rv">
+      <div class="screen-bar"><i></i><i></i><i></i><span>SCREEN RECORDING &middot; FRANK OPERATIONS CORE</span></div>
+      <div class="screen-body">
+        <video poster="images/frank-hud-poster.jpg" muted loop playsinline controls preload="none"
+               aria-label="Screen recording of the FRANK operations core: morning briefing, business lines, an item held at the approval gate, and the queue clearing once approved.">
+          <source src="videos/frank-hud.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fit" data-sec="FIT" data-title="Who it's for" data-read="owner-operators &middot; no tech needed"
+         data-log="audience: owner-operators|no technical prerequisite|25+ free guides published">
+  <div class="wrap">
+    <div class="eyebrow rv">WHO THIS IS FOR</div>
+    <h2 class="rv">Built for the<br>busy owner-operator.</h2>
+    <div class="fit-grid">
+      <div class="rv">
+        <p class="lede">You run the business, do the marketing, chase the invoices, and post on social when you get a minute &mdash; which is never. We take the repeatable jobs off your plate without handing your reputation to a robot.</p>
+        <ul class="ticks">
+          <li>Caf&eacute;s, trades, boutiques and online sellers</li>
+          <li>Solo operators and small teams</li>
+          <li>No tech knowledge needed on your side</li>
+          <li>You stay in control &mdash; approvals on everything</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <p class="lede">Prefer to learn it yourself? Everything we publish is tested hands-on before it's written up. If we haven't run it, we don't recommend it.</p>
+        <div class="learn">
+          <a href="guides/index.html"><div><h4>25+ free guides</h4><p>Real workflows in plain English, no jargon.</p></div><span class="go">READ &rarr;</span></a>
+          <a href="newsletter.html"><div><h4>Weekly newsletter</h4><p>What actually changed in workplace AI. 3-minute reads.</p></div><span class="go">BROWSE &rarr;</span></a>
+          <a href="#signup"><div><h4>Beginners guide</h4><p>Which AI tools do what, and where to start.</p></div><span class="go">DOWNLOAD &rarr;</span></a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section class="about-section" id="about">
-  <div class="container">
-    <div class="about-inner">
-      <div class="about-text reveal">
-        <div class="section-tag">WHO THIS IS FOR</div>
-        <h2 class="section-title">Built for the<br><span class="grad-text">busy owner-operator.</span></h2>
-        <p>You run the business, do the marketing, chase the invoices, and post on social when you get a minute — which is never. Our automations take the repeatable jobs off your plate without handing your reputation to a robot.</p>
-        <p>Prefer to learn it yourself? Our free guides and weekly newsletter teach practical AI in plain English.</p>
-        <div class="about-points">
-          <div class="about-point"><div class="point-check">✓</div><span>Cafés, trades, boutiques and online sellers</span></div>
-          <div class="about-point"><div class="point-check">✓</div><span>Solo operators and small teams</span></div>
-          <div class="about-point"><div class="point-check">✓</div><span>No tech knowledge needed on your side</span></div>
-          <div class="about-point"><div class="point-check">✓</div><span>You stay in control — approvals on everything</span></div>
-        </div>
-      </div>
-      <div class="testimonial-stack reveal">
-        <div class="t-card"><p>25+ free plain-English guides — real workflows, no jargon, written for people who work at a desk.</p><div class="t-author"><div class="t-avatar">📚</div><div><strong>Free guides</strong><span>Updated weekly</span></div></div></div>
-        <div class="t-card t-card-offset"><p>A weekly newsletter covering what actually changed in workplace AI — and how to use it, step by step.</p><div class="t-author"><div class="t-avatar">✉️</div><div><strong>Weekly newsletter</strong><span>3-minute reads</span></div></div></div>
-        <div class="t-card"><p>Everything we publish is tested hands-on before it's written up. If we haven't run it, we don't recommend it.</p><div class="t-author"><div class="t-avatar">🔧</div><div><strong>Tested first</strong><span>Hands-on, always</span></div></div></div>
-      </div>
+<section id="start" data-sec="CHANNEL" data-title="Start a project" data-read="channel open &middot; 2 business days"
+         data-log="channel open|hello@practicalaico.ai|reply within 2 business days">
+  <div class="wrap">
+    <div class="eyebrow rv">START A PROJECT</div>
+    <h2 class="rv">Tell us the task<br>you hate doing.</h2>
+    <p class="lede rv">One email. Describe the job that eats your week in plain English &mdash; screenshots welcome &mdash; and we'll come back within two business days with whether it's automatable, which system fits, and a fixed price.</p>
+    <div class="hero-actions rv">
+      <a class="btn btn-p" href="mailto:hello@practicalaico.ai?subject=Automation%20project%20enquiry&amp;body=The%20task%20I%20want%20to%20automate%3A%0A%0AMy%20business%3A%0A%0AHow%20I%20do%20it%20today%3A">EMAIL US THE TASK &rarr;</a>
+      <a class="btn btn-s" href="#frank">SEE FRANK RUNNING</a>
     </div>
-  </div>
-</section>
+    <p class="note rv">hello@practicalaico.ai &middot; If we can't automate it well, we'll tell you straight &mdash; and won't charge you to find out.</p>
 
-<!-- FREE GUIDES -->
-<section class="products-section" id="guides" style="padding-top:60px;padding-bottom:60px">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-tag">FREE GUIDES</div>
-      <h2 class="section-title">Learn AI at work.<br><span class="grad-text">Plain English. No cost.</span></h2>
-      <p class="section-sub">Short, practical articles on the AI skills that matter most for office workers.</p>
-    </div>
-    <div class="products-grid" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
-      <a href="guides/ai-email-system.html" class="start-card reveal" style="text-decoration:none">
-        <div class="start-icon">📧</div>
-        <h3>The 3-Step AI Email System</h3>
-        <p>Cut your email writing time in half with this prompt formula.</p>
-        <div style="font-size:0.78rem;color:var(--teal);margin-top:8px;font-weight:600">Read free →</div>
-      </a>
-      <a href="guides/ai-meeting-notes-workflow.html" class="start-card reveal" style="text-decoration:none">
-        <div class="start-icon">📝</div>
-        <h3>AI Meeting Notes in 90 Seconds</h3>
-        <p>Turn messy bullet points into structured summaries with action items.</p>
-        <div style="font-size:0.78rem;color:var(--teal);margin-top:8px;font-weight:600">Read free →</div>
-      </a>
-      <a href="guides/ai-privacy-at-work.html" class="start-card reveal" style="text-decoration:none">
-        <div class="start-icon">🔒</div>
-        <h3>AI Privacy: What's Safe to Type</h3>
-        <p>What you can and can't paste into ChatGPT at work.</p>
-        <div style="font-size:0.78rem;color:var(--teal);margin-top:8px;font-weight:600">Read free →</div>
-      </a>
-    </div>
-    <div style="text-align:center;margin-top:28px">
-      <a href="guides/" class="btn btn-glass" style="font-size:0.88rem;padding:10px 24px">View All Guides →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ENQUIRE -->
-<section class="email-section" id="enquire">
-  <div class="container">
-    <div class="email-inner">
-      <div class="section-tag">START A PROJECT</div>
-      <h2 class="section-title">Tell us the task<br><span class="grad-text">you hate doing.</span></h2>
-      <p>One email is all it takes. Describe the job that eats your week — plain English, no technical detail needed — and we'll reply within two business days with whether it's automatable, which package fits, and a fixed price.</p>
-      <div class="hero-actions" style="justify-content:center;margin-top:24px">
-        <a href="mailto:hello@practicalaico.ai?subject=Automation%20project%20enquiry&amp;body=The%20task%20I%20want%20to%20automate%3A%0A%0AMy%20business%3A%0A%0AHow%20I%20do%20it%20today%3A" class="btn btn-primary">Email Us the Task ↗</a>
-      </div>
-      <p class="email-note" style="margin-top:16px">hello@practicalaico.ai · No obligation. If we can't automate it well, we'll say so.</p>
-    </div>
-  </div>
-</section>
-
-<!-- EMAIL -->
-<section class="email-section" id="email-section">
-  <div class="container">
-    <div class="email-inner">
-      <div class="section-tag">FREE WEEKLY NEWSLETTER</div>
-      <h2 class="section-title">Get the free Beginners Guide<br><span class="grad-text">+ AI tips every week.</span></h2>
-      <p>Subscribe and instantly receive the <strong>Beginners Guide to Using Common AI Tools</strong> — free. Then every week, one practical AI tip you can use at work the same day.</p>
-      <div class="email-perks">
-        <div class="email-perk"><span class="perk-icon">🎁</span><span>Free Beginners Guide — instant download on signup</span></div>
-        <div class="email-perk"><span class="perk-icon">⚡</span><span>One actionable AI tip every week — 3 minutes to read</span></div>
-        <div class="email-perk"><span class="perk-icon">🔒</span><span>No spam. No fluff. Unsubscribe anytime.</span></div>
-      </div>
+    <div class="signup rv" id="signup">
+      <h3>Get the free Beginners Guide</h3>
+      <p>Subscribe and we'll send the Beginners Guide to Using Common AI Tools straight away, then one practical AI tip a week.</p>
       <div class="mailerlite-wrap">
-        <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1775464");</style>
-        <style type="text/css">
-        .ml-form-embedSubmitLoad{display:inline-block;width:20px;height:20px}.ml-form-embedSubmitLoad:after{content:" ";display:block;width:11px;height:11px;margin:1px;border-radius:50%;border:4px solid #fff;border-color:#ffffff #ffffff #ffffff transparent;animation:ml-form-embedSubmitLoad 1.2s linear infinite}@keyframes ml-form-embedSubmitLoad{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
-        #mlb2-39884279.ml-form-embedContainer{box-sizing:border-box;display:table;margin:0 auto;position:static;width:100%!important}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper{background-color:transparent;border-width:0;border-color:transparent;border-radius:4px;border-style:solid;box-sizing:border-box;display:inline-block!important;margin:0;padding:0;position:relative;width:100%!important}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody{padding:0}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent{margin:0 0 16px 0;text-align:center}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4{display:none}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p{display:none}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input{background-color:#0d1f3c!important;color:#fff!important;border-color:rgba(255,255,255,0.15)!important;border-radius:8px!important;border-style:solid!important;border-width:1px!important;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px!important;height:auto;line-height:21px!important;padding:12px 16px!important;width:100%!important;box-sizing:border-box!important}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::placeholder{color:rgba(255,255,255,0.4)!important}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow{margin:0 0 10px 0;width:100%}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit{margin:0;float:left;width:100%}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button{background-color:#00d4aa!important;border:none!important;border-radius:8px!important;box-shadow:none!important;color:#000!important;cursor:pointer;font-family:'Plus Jakarta Sans',sans-serif!important;font-size:15px!important;font-weight:700!important;line-height:21px!important;height:auto;padding:12px 20px!important;width:100%!important;box-sizing:border-box!important;transition:background-color 0.2s}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover{background-color:#00f0c0!important}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4{color:#00d4aa;font-family:'Plus Jakarta Sans',sans-serif;font-size:20px;font-weight:700;text-align:center;margin:0 0 8px 0}
-        #mlb2-39884279.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p{color:#b8b8d0;font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;text-align:center}
-        .ml-error input{border-color:red!important}
-        </style>
-
         <div id="mlb2-39884279" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-39884279">
           <div class="ml-form-align-center">
             <div class="ml-form-embedWrapper embedForm">
               <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
                 <div class="ml-form-embedContent"></div>
-                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe" data-code="" method="post" target="_blank">
+                <form class="ml-block-form" method="post" target="_blank" data-code=""
+                      action="https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe">
                   <div class="ml-form-formContent">
                     <div class="ml-form-fieldRow ml-last-item">
                       <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                        <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="your@email.com" autocomplete="email">
+                        <input aria-label="email" aria-required="true" type="email" class="form-control"
+                               data-inputmask="" name="fields[email]" placeholder="your@email.com" autocomplete="email">
                       </div>
                     </div>
                   </div>
                   <input type="hidden" name="ml-submit" value="1">
                   <div class="ml-form-embedSubmit">
-                    <button type="submit" class="primary">Get the Free Guide + Subscribe ↗</button>
+                    <button type="submit" class="primary">Get the Free Guide + Subscribe &rarr;</button>
                     <button disabled="disabled" style="display:none;" type="button" class="loading">
-                      <div class="ml-form-embedSubmitLoad"></div>
-                      <span class="sr-only">Loading...</span>
+                      <div class="ml-form-embedSubmitLoad"></div><span class="sr-only">Loading...</span>
                     </button>
                   </div>
                   <input type="hidden" name="anticsrf" value="true">
@@ -484,58 +376,45 @@
               </div>
               <div class="ml-form-successBody row-success" style="display:none">
                 <div class="ml-form-successContent">
-                  <h4>You're in! 🎉</h4>
-                  <p>Check your inbox — your free guide is on its way.</p>
+                  <h4>You're in!</h4>
+                  <p>Check your inbox &mdash; your free guide is on its way.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <script>function ml_webform_success_39884279(){var $=ml_jQuery||jQuery;$('.ml-subscribe-form-39884279 .row-success').show();$('.ml-subscribe-form-39884279 .row-form').hide();}</script>
-        <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
-        <script>fetch("https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/takel")</script>
       </div>
-      <p class="email-note" style="margin-top:16px">Join professionals staying ahead of the AI curve. <a href="newsletter.html" style="color:var(--teal);">Browse past issues ↗</a></p>
+      <p class="note">No spam. Unsubscribe anytime. <a href="newsletter.html">Browse past issues &rarr;</a></p>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-inner">
-      <div>
-        <a href="/" class="nav-logo footer-logo">
-          <div class="logo-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H9l-4 3v-3H4a3 3 0 0 1-3-3V9a3 3 0 0 1 3-3z" fill="rgba(6,13,26,0.5)" stroke="white" stroke-width="1.5"/><path d="M14 9l2 3 3 1.5-3 1.5-2 3-2-3-3-1.5 3-1.5z" fill="white"/></svg></div>
-          <span class="nav-brand">The Practical <em class="grad-text">AI</em> Co.</span>
-        </a>
-        <p class="footer-tagline">Smarter work. Less effort.</p>
-        <div class="footer-social">
-          <a href="https://www.youtube.com/@PracticalAiCo" target="_blank" class="social-link" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.38.55A3.02 3.02 0 0 0 .5 6.19C0 8.05 0 12 0 12s0 3.95.5 5.81a3.02 3.02 0 0 0 2.12 2.14C4.47 20.5 12 20.5 12 20.5s7.53 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14C24 15.95 24 12 24 12s0-3.95-.5-5.81zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg></a>
-          <a href="https://www.tiktok.com/@practical_ai_co" target="_blank" class="social-link" aria-label="TikTok"><svg width="16" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.87a8.2 8.2 0 0 0 4.78 1.52V6.95a4.85 4.85 0 0 1-1.01-.26z"/></svg></a>
-        </div>
-      </div>
-      <div class="footer-links">
-        <div class="footer-col"><h4>Services</h4><ul><li><a href="#services">Content Autopilot</a></li><li><a href="#services">Product Listing Engine</a></li><li><a href="#services">Back-Office Autopilot</a></li><li><a href="#how-it-works">How It Works</a></li><li><a href="#enquire">Start a Project</a></li></ul></div>
-        <div class="footer-col"><h4>Company</h4><ul><li><a href="#about">About</a></li><li><a href="guides/">Guides</a></li><li><a href="newsletter.html">Newsletter</a></li><li><a href="faq.html">FAQ</a></li><li><a href="mailto:hello@practicalaico.ai">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
-      </div>
-    </div>
-    <div class="footer-bottom"><p>© 2026 The Practical AI Co. All rights reserved.</p><p><a href="mailto:hello@practicalaico.ai">hello@practicalaico.ai</a></p></div>
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 THE PRACTICAL AI CO. &middot; SYDNEY</span>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="guides/index.html">GUIDES</a>
+      <a href="newsletter.html">NEWSLETTER</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">PRIVACY</a>
+      <a href="terms.html">TERMS</a>
+      <a href="https://www.youtube.com/@PracticalAiCo" rel="noopener">YOUTUBE</a>
+      <a href="mailto:hello@practicalaico.ai">CONTACT</a>
+    </nav>
   </div>
 </footer>
+</div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/main.js"></script>
+<script src="js/hud.js"></script>
 <script>
-// Frank video controls
-var fv = document.getElementById('frankVideo');
-var fp = document.getElementById('frankPlayBtn');
-var fs = document.getElementById('frankSoundBtn');
-
-function toggleFrank(){if(!fv)return;if(fv.paused){fv.play();if(fp)fp.textContent='\u23F8';}else{fv.pause();if(fp)fp.textContent='\u25B6';}}
-function toggleFrankSound(){if(!fv)return;fv.muted=!fv.muted;if(fs)fs.textContent=fv.muted?'\uD83D\uDD07':'\uD83D\uDD0A';}
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},
+  l=d.createElement(e),l.async=1,l.src=u,n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account','2264400');
+  function ml_webform_success_39884279(){var $=ml_jQuery||jQuery;
+    $('.ml-subscribe-form-39884279 .row-success').show();
+    $('.ml-subscribe-form-39884279 .row-form').hide();}
 </script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b"></script>
 </body>
 </html>
-```
-
----
