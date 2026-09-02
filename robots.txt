@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Weekly-run drafts are not for indexing
+Disallow: /.drafts/
+
+Sitemap: https://practicalaico.ai/sitemap.xml
