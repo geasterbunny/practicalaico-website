@@ -2,7 +2,7 @@
 
 > The Practical AI Co. builds done-for-you AI automation for small businesses — social content pipelines, product listing engines, and back-office follow-up systems — delivered working at fixed prices, with human approval on everything the automation sends or publishes. Based in Australia. We also publish free plain-English guides and a weekly newsletter teaching practical AI to non-technical professionals.
 
-The Practical AI Co. is an Australian automation studio for small businesses: cafés, trades, boutiques, online sellers, solo operators and small teams. Every system we sell is one we first built and ran on our own businesses. No sales calls — projects start with one email describing the task the owner wants automated, and we reply with a fixed-price scope.
+The Practical AI Co. is an Australian automation studio for small businesses: cafés, trades, boutiques, online sellers, solo operators and small teams. Every system we sell is one we first built and ran on our own businesses. No sales calls — projects start with one email, or a conversation with Frank on the site, describing the task the owner wants automated, and we reply with a fixed-price scope.
 
 ## Services
 
@@ -17,13 +17,15 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 FRANK is not for sale yet. Early access is open at https://practicalaico.ai/#frank — the first group gets the demo before general release.
 
+Frank also appears on this site as a chat and voice concierge that answers visitor questions, scopes projects and takes down lead details for a person to follow up — he always discloses he's AI and never books or promises anything without a human confirming it first.
+
 ## The Approval Gate
 
 Every system we ship holds anything that sends, spends or publishes in a queue until a person releases it. This is not configurable. It is the reason our automations can be trusted with a business's public reputation and its money, and it is what separates us from AI agencies that let a model post unattended.
 
 ## How It Works
 
-1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalaico.ai
+1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalaico.ai, or describe it to Frank in the chat/voice widget on the site
 2. We build the automation and demo it running on your real work before you pay the balance
 3. The system runs on schedule with one-tap approvals; first month of monitoring and tuning included
 
