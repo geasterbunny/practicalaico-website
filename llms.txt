@@ -4,11 +4,18 @@
 
 The Practical AI Co. is an Australian automation studio for small businesses: cafés, trades, boutiques, online sellers, solo operators and small teams. Every system we sell is one we first built and ran on our own businesses. No sales calls — projects start with one email, or a conversation with Frank on the site, describing the task the owner wants automated, and we reply with a fixed-price scope.
 
+## Websites
+
+- [Site Rescue](https://practicalaico.ai/websites): From A$490. Fixed-price audit of an existing site — every page, link and redirect crawled, what Google has indexed and rejected, speed measured — with a plain-English report and a fixed price to fix.
+- [Website Build](https://practicalaico.ai/websites): From A$1,490. Five-page small-business site (tradies, cafés, studios, online sellers), mobile first, set up for local search, enquiry form wired into an approval-gated follow-up system. Domain and code owned by the client, hosting at cost, no page builder or platform fee.
+
 ## Services
 
 - [Content Autopilot](https://practicalaico.ai/#build): From A$990 setup + A$390/month. 8–12 branded social posts a week — researched, written, designed and scheduled to Facebook, Instagram, TikTok or LinkedIn. The owner approves each week's content with one tap; nothing posts without approval.
 - [Product Listing Engine](https://practicalaico.ai/#build): From A$690 per catalogue run. For Etsy, Shopify and print-on-demand sellers — turns a product list into finished listings (titles, tags, descriptions, mockup images) with an automated quality gate that reads every image and holds anything with a typo or print error. Printify integrated.
 - [Back-Office Autopilot](https://practicalaico.ai/#build): From A$1,490 setup + A$490/month. Quote and invoice follow-ups, review responses and appointment reminders drafted automatically and queued for one-tap owner approval, plus a daily briefing of what needs attention.
+- [Website Chatbot](https://practicalaico.ai/#build): From A$790 setup + A$190/month. Trained on the client's own pages and prices; answers questions, captures enquiries, and holds anything that commits the business for approval.
+- [AI Phone Assistant](https://practicalaico.ai/#build): From A$1,290 setup + A$290/month. Answers every call, books only inside pre-approved calendar rules, texts a transcript after each call.
 - Custom builds: scoped at a fixed price from a plain-English description of the task.
 
 ## FRANK
