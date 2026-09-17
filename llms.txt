@@ -20,7 +20,7 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 ## FRANK
 
-[FRANK](https://practicalaico.ai/#frank) is our flagship: an operations core that runs on the owner's own machine and does the running-a-company work — drafts emails, builds a daily briefing, tracks spend against budget, watches the jobs meant to run overnight and reports the ones that failed. 44 working skills with 523 automated tests behind them. Anything involving money or the outside world stops at an approval gate and waits for a human.
+[FRANK](https://practicalaico.ai/#frank) — Frontline Realtime Assistant Navigating Knowledge — is our flagship: an operations core that runs on the owner's own machine and does the running-a-company work — drafts emails, builds a daily briefing, tracks spend against budget, watches the jobs meant to run overnight and reports the ones that failed. 44 working skills with 523 automated tests behind them. Anything involving money or the outside world stops at an approval gate and waits for a human.
 
 FRANK is not for sale yet. Early access is open at https://practicalaico.ai/#frank — the first group gets the demo before general release.
 
