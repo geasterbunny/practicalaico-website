@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Draft a Report With Claude Docs, Section by Section — The Practical AI Co.</title>
+  <meta name="description" content="Anthropic folded Cowork into Claude and launched Claude Docs. Here's how to use it to draft a real, editable document instead of copy-pasting chat replies into Word.">
+  <meta name="keywords" content="Claude Docs, Claude Cowork, how to use Claude for documents, AI document drafting, Claude at work">
+  <link rel="canonical" href="https://practicalaico.ai/guides/claude-docs-draft-a-report">
+  <meta property="og:title" content="How to Draft a Report With Claude Docs, Section by Section">
+  <meta property="og:description" content="Anthropic folded Cowork into Claude and launched Claude Docs. Here's how to use it to draft a real, editable document instead of copy-pasting chat replies into Word.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://practicalaico.ai/guides/claude-docs-draft-a-report.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Draft a Report With Claude Docs, Section by Section",
+    "description": "Anthropic folded Cowork into Claude and launched Claude Docs. Here's how to use it to draft a real, editable document instead of copy-pasting chat replies into Word.",
+    "author": {"@type": "Organization", "name": "The Practical AI Co.", "url": "https://practicalaico.ai"},
+    "publisher": {"@type": "Organization", "name": "The Practical AI Co.", "url": "https://practicalaico.ai"},
+    "datePublished": "2026-09-27",
+    "mainEntityOfPage": "https://practicalaico.ai/guides/claude-docs-draft-a-report.html"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0B1220;--bg-card:#111b2e;--text:#e2e8f0;--text-muted:#94a3b8;--text-heading:#f1f5f9;--teal:#14B8A6;--cyan:#0EA5E9;--orange:#F97316;--gradient:linear-gradient(135deg,#14B8A6,#0EA5E9);--border:rgba(148,163,184,0.1);--max-w:720px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}nav{position:sticky;top:0;z-index:100;background:rgba(11,18,32,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.9rem 1.5rem}.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.nav-logo{font-weight:700;font-size:1.05rem;color:var(--text-heading);text-decoration:none}.nav-logo em{font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.nav-links{display:flex;gap:1.6rem;align-items:center}.nav-links a{color:var(--text-muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}.nav-links a:hover{color:var(--text)}.nav-cta{background:var(--gradient);color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem!important}.article-container{max-width:var(--max-w);margin:0 auto;padding:3rem 1.5rem 5rem}.article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;flex-wrap:wrap}.meta-tag{background:rgba(14,165,233,0.12);color:var(--cyan);padding:.25rem .75rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}.meta-date,.meta-read{color:var(--text-muted);font-size:.82rem}.article-title{font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:700;color:var(--text-heading);line-height:1.2;margin-bottom:1.2rem}.article-subtitle{font-size:1.1rem;color:var(--text-muted);line-height:1.6;margin-bottom:2.5rem;border-left:3px solid var(--teal);padding-left:1rem}.article-body h2{font-size:1.35rem;font-weight:700;color:var(--text-heading);margin:2.5rem 0 .8rem;line-height:1.3}.article-body h3{font-size:1.1rem;font-weight:600;color:var(--text-heading);margin:2rem 0 .6rem}.article-body p{margin-bottom:1.2rem}.article-body strong{color:var(--text-heading);font-weight:600}.prompt-block{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:8px;padding:1.2rem 1.4rem;margin:1.5rem 0;font-family:'Space Mono',monospace;font-size:.85rem;line-height:1.7;white-space:pre-wrap}.tip-block{background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.2);border-radius:10px;padding:1.3rem 1.5rem;margin:2rem 0}.tip-block .tip-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--orange);margin-bottom:.5rem}.product-cta{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.8rem;margin:2.5rem 0;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}.product-cta-text{flex:1;min-width:200px}.product-cta-text h4{font-size:1rem;font-weight:700;color:var(--text-heading);margin-bottom:.3rem}.product-cta-text p{font-size:.88rem;color:var(--text-muted);margin:0}.product-cta-btn{background:var(--gradient);color:#fff;text-decoration:none;padding:.7rem 1.5rem;border-radius:8px;font-weight:600;font-size:.9rem;white-space:nowrap;transition:opacity .2s}.product-cta-btn:hover{opacity:.9}.guide-nav{display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}.guide-nav a{color:var(--text-muted);text-decoration:none;font-size:.88rem;transition:color .2s}.guide-nav a:hover{color:var(--teal)}.guide-nav .nav-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);opacity:.6;display:block;margin-bottom:.2rem}.back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--text-muted);text-decoration:none;font-size:.85rem;margin-bottom:2rem;transition:color .2s}.back-link:hover{color:var(--teal)}footer{border-top:1px solid var(--border);padding:2rem 1.5rem;text-align:center;color:var(--text-muted);font-size:.8rem}footer a{color:var(--text-muted);text-decoration:none}footer a:hover{color:var(--text)}@media(max-width:640px){.article-container{padding:2rem 1rem 3rem}.product-cta{flex-direction:column;align-items:stretch;text-align:center}.nav-links{gap:.8rem}}
+  </style>
+
+</head>
+<body>
+<nav><div class="nav-inner"><a href="https://practicalaico.ai/" class="nav-logo">The Practical <em>AI</em> Co.</a><div class="nav-links"><a href="https://practicalaico.ai/#build">Services</a><a href="https://practicalaico.ai/websites">Websites</a><a href="https://practicalaico.ai/guides/">Guides</a><a href="https://practicalaico.ai/newsletter">Newsletter</a><a href="https://practicalaico.ai/#start" class="nav-cta">Start a Project</a></div></div></nav>
+<article class="article-container">
+  <a href="https://practicalaico.ai/guides/" class="back-link">← All Guides</a>
+  <div class="article-meta">
+    <span class="meta-tag">Tools</span>
+    <span class="meta-date">September 2026</span>
+    <span class="meta-read">6 min read</span>
+  </div>
+  <h1 class="article-title">How to Draft a Report With Claude Docs, Section by Section</h1>
+  <p class="article-subtitle">Anthropic folded its separate Cowork workspace into ordinary Claude chat and launched a real, editable document tool. Here's how to actually use it instead of copy-pasting chat replies into Word.</p>
+  <div class="article-body">
+
+    <h2>What changed on 16 September</h2>
+    <p>Anthropic folded its separate "Cowork" workspace into ordinary Claude chat and launched two new built-in tools alongside it: Claude Docs and Claude Slides. Docs is a real, editable document that lives inside Claude, not a wall of chat text you then have to copy out into Word. You ask for something, Claude opens a document, and you keep talking to refine specific parts of it.</p>
+
+    <h2>How to start one</h2>
+    <p>Go to claude.ai, or the desktop app, and start a new chat as usual. Ask for a document rather than a chat answer &mdash; "write me a one-page project update for my manager" &mdash; and Claude opens it as a Doc automatically when the request calls for it. If it doesn't switch over on its own, ask directly: "build this as a document, not a chat reply."</p>
+
+    <h3>Working on it section by section</h3>
+    <p>The part worth learning is that you don't have to redo the whole thing when one part is wrong. Ask Claude to fix just the second paragraph, or add a section on budget, and it edits that part while leaving the rest untouched. You can also leave a comment on a specific paragraph, the way you would in Word, and Claude responds to that comment directly rather than rewriting the whole document around it.</p>
+
+    <h3>Getting it out of Claude</h3>
+    <p>When you're happy with it, Docs can be shared as a link &mdash; useful if a colleague also has Claude access &mdash; or downloaded. Anthropic lists Word and PDF export as part of the feature. Test both before you rely on either for something urgent: a brand-new export feature in its first weeks is exactly the kind of thing that can have formatting rough edges, and you want to find that on your own screen, not after you've sent the file on.</p>
+
+    <div class="prompt-block">I need a [type of document, e.g. one-page project update] for [audience].
+
+Here's the context: [background info, or paste the source material]
+It needs to cover: [the 2-4 sections you need]
+Tone: [e.g. formal, brief, for a non-technical reader]
+
+Build this as a Claude Doc, not a chat reply. Once it's drafted, I'll tell you which sections to adjust one at a time.</div>
+
+    <div class="tip-block">
+      <div class="tip-label">💡 This week's action</div>
+      <p>Open Claude and draft something you were going to write in Word anyway &mdash; a status update, a short proposal, a set of meeting minutes. Use section-by-section editing instead of asking for a full rewrite each time. That's the whole point of the feature, and running one real task through it is the fastest way to tell whether it belongs in your week.</p>
+    </div>
+
+    <h2>Who can use it right now</h2>
+    <p>This is rolling out to Pro and Max subscribers first, across web, desktop and mobile, with free and team tiers to follow later &mdash; Anthropic hasn't given a firm date for that yet. If you're on a free Claude account, you'll still see the older chat-only experience for now.</p>
+
+    <h2>Should you switch from Word or Google Docs</h2>
+    <p>Not yet, not fully. Treat Claude Docs as a fast way to get a strong first draft that lives somewhere collaborative, not as your permanent home for a document your whole team needs to track changes on. For now, draft in Claude, then move the finished version into whatever your workplace already uses for version control and sign-off. As the feature matures over the coming months, that advice may well change.</p>
+
+    <h3>A realistic first task to try</h3>
+    <p>Don't start with your most important document. Pick something lower-stakes but genuinely useful &mdash; a weekly status update, a summary of a project for a colleague who's about to go on leave, or a first pass at a proposal you'll heavily edit anyway. Give Claude the same brief you'd give a capable junior colleague: what it's for, who's reading it, and what "done" looks like. The gap between a vague brief and a specific one shows up immediately in how much editing you have to do afterwards.</p>
+
+    <h3>What happens to work you've already built in Cowork</h3>
+    <p>If you were already using Cowork before the merge, your existing files and chats should carry over into the unified interface rather than disappearing &mdash; but if you relied on a specific Cowork workflow for something important, it's worth checking that it still behaves the way you expect in the first week or two after the change, rather than assuming nothing shifted underneath it.</p>
+    
+  </div>
+  <div class="product-cta">
+    <div class="product-cta-text">
+      <h4>📘 AI Fundamentals & Practical Tools</h4>
+      <p>Go deeper with the full guide — instant download, no jargon. A$79.00</p>
+    </div>
+    <a href="https://payhip.com/b/XVCYm" class="product-cta-btn" target="_blank">Get It Now ↗</a>
+  </div>
+
+<div class="nl-cta-wrap">
+  <style>.nl-cta-wrap{margin-top:3rem;padding:2rem 2rem 1.8rem;background:rgba(20,184,166,0.07);border:1px solid rgba(20,184,166,0.2);border-radius:14px;text-align:center}.nl-cta-wrap .nl-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#14B8A6;margin-bottom:.5rem}.nl-cta-wrap h3{font-size:1.15rem;font-weight:700;color:#f1f5f9;margin:.4rem 0 .5rem}.nl-cta-wrap>p{font-size:.88rem;color:#94a3b8;margin:0 0 1.2rem}.nl-cta-form{display:flex;gap:.6rem;max-width:420px;margin:0 auto .8rem;flex-wrap:wrap}.nl-cta-form input{flex:1;min-width:190px;background:#0d1f3c;color:#fff;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none}.nl-cta-form input::placeholder{color:rgba(255,255,255,0.35)}.nl-cta-form input:focus{border-color:rgba(20,184,166,0.5)}.nl-cta-form button{background:linear-gradient(135deg,#14B8A6,#0EA5E9);color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;transition:opacity .2s}.nl-cta-form button:hover{opacity:.9}.nl-cta-success{display:none;color:#14B8A6;font-weight:600;font-size:.92rem;margin:.6rem 0 0}.nl-cta-note{font-size:.74rem;color:#475569;margin:.5rem 0 0}@media(max-width:480px){.nl-cta-form{flex-direction:column}.nl-cta-form input,.nl-cta-form button{width:100%}}</style>
+  <div class="nl-tag">FREE WEEKLY NEWSLETTER</div>
+  <h3>One practical AI tip, every week</h3>
+  <p>Join office workers staying ahead on AI. Free Beginners Guide included on signup. 3 minutes to read.</p>
+  <form class="nl-cta-form" id="nlCtaForm" novalidate>
+    <input type="email" id="nlCtaEmail" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe Free ↗</button>
+  </form>
+  <p class="nl-cta-success" id="nlCtaSuccess">✓ You're in! Check your inbox for the free guide.</p>
+  <p class="nl-cta-note">No spam. Unsubscribe anytime.</p>
+</div>
+<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
+</article>
+
+<div class="product-cta" style="border-left:3px solid var(--teal)">
+  <div class="product-cta-text">
+    <h4>Rather not do it by hand?</h4>
+    <p>We build the systems that do this work for you &mdash; and FRANK, the operations core that runs the business side of your business. Early access is open. Need a site that brings the work in? <a href="https://practicalaico.ai/websites" style="color:var(--teal)">Small-business websites, fixed price, Sydney</a>.</p>
+  </div>
+  <a href="https://practicalaico.ai/#frank" class="product-cta-btn">Meet FRANK &rarr;</a>
+</div>
+
+<footer><p>© 2026 The Practical AI Co. All rights reserved.</p><p style="margin-top:.5rem"><a href="https://practicalaico.ai/privacy">Privacy Policy</a> · <a href="https://practicalaico.ai/terms">Terms</a> · <a href="https://practicalaico.ai/faq">FAQ</a></p></footer>
+</body>
+</html>
