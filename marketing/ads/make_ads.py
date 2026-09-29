@@ -17,7 +17,7 @@ import wave
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
-from ads import ADS
+from ads import ADS, VO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "out")
@@ -556,7 +556,42 @@ def add(buf, sig, start):
     end = min(len(buf), start + len(sig))
     buf[start:end] += sig[: end - start]
 
-def make_audio(dur, cuts, hook_end, path, seed, bpm):
+# ---------------------------------------------------------------- voiceover
+TTS = os.path.join(HERE, "tts")
+VOICE = os.environ.get("AD_VOICE", "bm_george")
+VO_LEAD, VO_TAIL = 0.25, 0.55  # silence before / after each line within a scene
+_kokoro = None
+
+def speak(text):
+    """Synthesise one line with Kokoro (local, offline). Returns mono float32 at 44.1kHz."""
+    global _kokoro
+    if _kokoro is None:
+        from kokoro_onnx import Kokoro
+        _kokoro = Kokoro(os.path.join(TTS, "kokoro-v1.0.onnx"), os.path.join(TTS, "voices-v1.0.bin"))
+    a, sr = _kokoro.create(text, voice=VOICE, speed=1.08, lang="en-gb" if VOICE[0] == "b" else "en-us")
+    a = np.asarray(a, np.float32)
+    n = int(len(a) * 44100 / sr)
+    return np.interp(np.linspace(0, len(a) - 1, n), np.arange(len(a)), a).astype(np.float32)
+
+def fit_voiceover(ad):
+    """Synthesise every scene's line and stretch scenes that are too short to hold it."""
+    clips = []
+    for sc, line in zip(ad["scenes"], VO[ad["id"]]):
+        clip = speak(line)
+        need = VO_LEAD + len(clip) / 44100 + VO_TAIL
+        if need > sc["dur"]:
+            sc["dur"] = round(need + 0.05, 2)
+        clips.append(clip)
+    return clips
+
+def voice_track(tl, clips, dur):
+    sr = 44100
+    track = np.zeros(int(dur * sr) + sr, np.float32)
+    for (st, _), clip in zip(tl, clips):
+        add(track, clip, int((st + VO_LEAD) * sr))
+    return track[: int(dur * sr)]
+
+def make_audio(dur, cuts, hook_end, path, seed, bpm, voice=None):
     sr = 44100
     n = int(dur * sr) + sr
     rng = np.random.default_rng(seed)
@@ -610,6 +645,17 @@ def make_audio(dur, cuts, hook_end, path, seed, bpm):
     fade[-fl:] = np.linspace(1, 0, fl)
     peak = max(np.abs(L).max(), np.abs(R).max()) + 1e-9
     L, R = L * fade / peak * .85, R * fade / peak * .85
+    if voice is not None:
+        # duck the music under speech: smoothed envelope of the voice drives the gain
+        env = np.convolve(np.abs(voice), np.ones(4410) / 4410, "same")
+        env = np.clip(env / (env.max() + 1e-9) * 6, 0, 1)
+        env = np.convolve(env, np.ones(8820) / 8820, "same")
+        g = .42 - .28 * np.clip(env, 0, 1)
+        v = voice / (np.abs(voice).max() + 1e-9) * .92
+        L, R = L * g + v, R * g + v
+        pk = max(np.abs(L).max(), np.abs(R).max())
+        if pk > .98:
+            L, R = L / pk * .98, R / pk * .98
     data = (np.stack([L, R], 1) * 32767).astype(np.int16)
     with wave.open(path, "wb") as wf:
         wf.setnchannels(2); wf.setsampwidth(2); wf.setframerate(sr)
@@ -663,8 +709,9 @@ class Renderer:
         c.spaced(x0 + 46, 207, label, fm, MUTED, .85, sp=4)
         return fr.convert("RGB")
 
-def render(ad, stills=False):
+def render(ad, stills=False, voice=True):
     os.makedirs(OUT, exist_ok=True)
+    clips = fit_voiceover(ad) if voice and not stills else None
     r = Renderer(ad)
     slug = "ad%d-%s" % (ad["id"], ad["slug"])
     if stills:
@@ -675,7 +722,8 @@ def render(ad, stills=False):
     wav = os.path.join(OUT, slug + ".wav")
     cuts = [st for st, _ in r.tl[1:]]
     hook_end = sum(sc["dur"] for sc in ad["scenes"] if sc["kind"] == "hook") or r.tl[1][0]
-    make_audio(r.dur, cuts, hook_end, wav, ad["id"], ad.get("bpm", 100))
+    vt = voice_track(r.tl, clips, r.dur) if clips else None
+    make_audio(r.dur, cuts, hook_end, wav, ad["id"], ad.get("bpm", 100), vt)
     mp4 = os.path.join(OUT, slug + ".mp4")
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", "%dx%d" % (W, H),
            "-r", str(FPS), "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "21",
@@ -697,4 +745,4 @@ if __name__ == "__main__":
     ids = [int(a) for a in args if a.isdigit()]
     for ad in ADS:
         if not ids or ad["id"] in ids:
-            render(ad, stills)
+            render(ad, stills, voice="--no-voice" not in args)

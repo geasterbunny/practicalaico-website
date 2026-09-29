@@ -115,3 +115,58 @@ ADS = [
 for _ad in ADS:
     _d = sum(s["dur"] for s in _ad["scenes"])
     assert _d >= 45, (_ad["slug"], _d)
+
+# Voiceover, one line per scene (same order as the scenes above). Written for
+# the ear: numbers and "A.I." spelled the way they should be spoken.
+SITE = "Practical A.I. Co dot A.I."
+VO = {
+    1: [
+        "It's eleven forty-seven p.m. Someone's on your website, ready to book.",
+        "And you're asleep.",
+        "They ask a question. Nobody answers. So they book whoever replies first.",
+        "Enquiries don't wait for business hours. They land while you're on the tools, at dinner, or asleep.",
+        "Now picture a chatbot on your site. It answers the question, offers a fixed quote, and takes the booking request, all while you sleep.",
+        "It's trained on your pages, prices and FAQs, not the internet. It captures the lead when it can't answer. And anything that commits you waits for your tap.",
+        "Add it to the site you already have, or to a new one we build.",
+        "Stop losing the eleven p.m. enquiry. Website chatbots from seven hundred and ninety dollars. " + SITE,
+    ],
+    2: [
+        "Your Instagram gets likes. Your bank account doesn't.",
+        "DM for price is costing you sales. Every sale has to survive a back-and-forth, and most don't.",
+        "Give them a proper store instead. Add to cart, Apple Pay, done. The payment lands, and the order alert hits your phone.",
+        "We build your Shopify store around your brand, with card, Apple Pay and Google Pay at checkout, and shipping and G.S.T. set up properly.",
+        "Got two hundred products? Don't type them. Our listing engine writes the copy, tags and mockups for you.",
+        "Your store, your domain, your customers. Fixed price, so you know the number before we start.",
+        "Turn followers into orders. Get a fixed-price quote at " + SITE,
+    ],
+    3: [
+        "Your website gets one glance.",
+        "Make it one they remember.",
+        "Live 3D, right in the browser. No app, no download, and it works on phones.",
+        "It's not a gimmick. It's a reason to stay. Spin the product, peel back the build, turn a scroll into a story.",
+        "Our own homepage runs live 3D, and it's usable in about half a second. Fast and impressive aren't opposites.",
+        "Products people can spin and zoom. Trades showing the job layer by layer. Story pages that hold attention, and still set up to be found on Google.",
+        "Build a site people actually scroll. Fixed price, at " + SITE,
+    ],
+    4: [
+        "Your next customer might not Google you.",
+        "They'll ask A.I.",
+        "They type: who's the best bathroom renovator in the Sutherland Shire? The A.I. lists three businesses. Are you one of them?",
+        "A.I. can only recommend what it can read. Slow pages, vague copy and details buried in images make you invisible.",
+        "We make your site A.I. readable. Structured data, clear answers to real customer questions, your Google Business Profile, sitemap and Search Console, all on fast pages.",
+        "Nobody can promise you the number one spot. Anyone who does is guessing.",
+        "On our own site, Google's view went from eighteen pages to thirty-three, the same day.",
+        "Be the answer. Start with a site audit from four hundred and ninety dollars, at " + SITE,
+    ],
+    5: [
+        "Most small business websites are brochures.",
+        "They just sit there.",
+        "Yours should bring the work in. It should answer, sell, take payment and get found, while you're on the tools.",
+        "Plug in what you need. An A.I. chatbot that answers at eleven p.m. An online store that sells while you sleep. Card, Apple Pay and Google Pay. Live 3D that stops the scroll. A.I. search, so ChatGPT can find you. And follow-ups drafted for your tap.",
+        "Built in days, not months. Five-page sites from fourteen hundred and ninety dollars, with no monthly platform fee.",
+        "Nothing goes live without your OK. Domain and code in your name. Yours outright.",
+        "Build the site that brings the work in. " + SITE,
+    ],
+}
+for _ad in ADS:
+    assert len(VO[_ad["id"]]) == len(_ad["scenes"]), _ad["slug"]

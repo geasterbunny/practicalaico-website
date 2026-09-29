@@ -1,11 +1,11 @@
 # Website ads: captions and tags
 
-Five vertical (9:16) ads, 1080×1920, 45–50 seconds each. Built for Reels, TikTok, Shorts and Telegram. Every ad opens on a hook in the first 3 seconds and ends on a call to action to practicalaico.ai.
+Five vertical (9:16) ads, 1080×1920, 53–59 seconds each, with a voiceover (Kokoro, voice `bm_george`). Built for Reels, TikTok, Shorts and Telegram. Every ad opens on a hook in the first 3 seconds and ends on a call to action to practicalaico.ai.
 
 ---
 
 ## Ad 1 · Chatbot: "It's 11:47pm"
-**File:** `out/ad1-chatbot-11pm.mp4` (48s)
+**File:** `out/ad1-chatbot-11pm.mp4` (56s)
 
 It's 11:47pm. Someone's on your website, ready to book, and you're asleep. 😴
 
@@ -21,7 +21,7 @@ Plugs into the site you already have. From A$790 setup.
 ---
 
 ## Ad 2 · Online store and payments: "Likes don't pay rent"
-**File:** `out/ad2-store-payments.mp4` (48s)
+**File:** `out/ad2-store-payments.mp4` (55s)
 
 Your Instagram gets likes. Your bank account doesn't. 💸
 
@@ -37,7 +37,7 @@ Fixed-price quote within 2 business days.
 ---
 
 ## Ad 3 · 3D websites: "One glance"
-**File:** `out/ad3-3d-websites.mp4` (47s)
+**File:** `out/ad3-3d-websites.mp4` (53s)
 
 Your website gets one glance. Make it one they remember. ✨
 
@@ -51,7 +51,7 @@ Our own homepage runs live 3D and is usable in about half a second. Fast and imp
 ---
 
 ## Ad 4 · AI search optimisation: "They'll ask AI"
-**File:** `out/ad4-ai-search.mp4` (50s)
+**File:** `out/ad4-ai-search.mp4` (59s)
 
 Your next customer might not Google you. They'll ask AI. 🤖
 
@@ -67,7 +67,7 @@ Nobody can promise the #1 spot. We fix what's fixable and show you the before an
 ---
 
 ## Ad 5 · Full toolkit: "Brochures just sit there"
-**File:** `out/ad5-full-toolkit.mp4` (47s)
+**File:** `out/ad5-full-toolkit.mp4` (55s)
 
 Most small business websites are brochures. They just sit there. 📄
 
