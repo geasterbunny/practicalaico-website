@@ -53,11 +53,12 @@ def rgba(c, a=1.0):
     return (c[0], c[1], c[2], int(255 * clamp(a)))
 
 # ---------------------------------------------------------------- fonts
-FONTS = {  # kind: (file, weight)
-    "display": ("Archivo.ttf", 800),
-    "body": ("PlusJakartaSans.ttf", 500),
-    "bodyb": ("PlusJakartaSans.ttf", 700),
-    "mono": ("JetBrainsMono.ttf", 500),
+# Static weights from the @fontsource npm packages (see README.md).
+FONTS = {  # kind: (file, weight for variable fonts)
+    "display": ("display.woff", 800),
+    "body": ("body.woff", 500),
+    "bodyb": ("bodyb.woff", 700),
+    "mono": ("mono.woff", 500),
 }
 FALLBACK = {
     "display": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
