@@ -9,6 +9,13 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 - [Site Rescue](https://practicalaico.ai/websites): From A$490. Fixed-price audit of an existing site — every page, link and redirect crawled, what Google has indexed and rejected, speed measured — with a plain-English report and a fixed price to fix.
 - [Website Build](https://practicalaico.ai/websites): From A$1,490. Five-page small-business site (tradies, cafés, studios, online sellers), mobile first, set up for local search, enquiry form wired into an approval-gated follow-up system. Domain and code owned by the client, hosting at cost, no page builder or platform fee.
 
+## Services by trade and problem
+
+All of these: https://practicalaico.ai/services/
+<!-- SERVICES:START -->
+- [An AI receptionist for tradies that answers while you're on the tools.](https://practicalaico.ai/services/ai-receptionist-for-tradies): AI receptionist for Australian tradies: answers every call 24/7, books jobs only inside rules you set, texts you the transcript. From A$1,290 + A$290/month.
+<!-- SERVICES:END -->
+
 ## Services
 
 - [Content Autopilot](https://practicalaico.ai/#build): From A$990 setup + A$390/month. 8–12 branded social posts a week — researched, written, designed and scheduled to Facebook, Instagram, TikTok or LinkedIn. The owner approves each week's content with one tap; nothing posts without approval.
