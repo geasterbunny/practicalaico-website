@@ -13,6 +13,7 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 All of these: https://practicalaico.ai/services/
 <!-- SERVICES:START -->
+- [Do tradies need a website if they have Facebook? Not always. Here's how to tell.](https://practicalaico.ai/services/do-tradies-need-a-website): Facebook page or a website? The honest answer for tradies: who finds you, what you own, and a 5-minute test. Website Build from A$1,490, yours outright.
 - [A website for tradies that does one job: gets the phone ringing.](https://practicalaico.ai/services/website-for-tradies): What a Sydney tradie website actually needs, what it doesn't, and what it costs. Five pages, yours outright, from A$1,490 fixed price.
 - [An AI receptionist for tradies that answers while you're on the tools.](https://practicalaico.ai/services/ai-receptionist-for-tradies): AI receptionist for Australian tradies: answers every call 24/7, books jobs only inside rules you set, texts you the transcript. From A$1,290 + A$290/month.
 <!-- SERVICES:END -->
