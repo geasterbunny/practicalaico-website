@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://practicalaico.ai/newsletter</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -333,6 +333,18 @@
   <url>
     <loc>https://practicalaico.ai/services/do-tradies-need-a-website</loc>
     <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://practicalaico.ai/guides/notebooklm-slide-deck-from-your-documents</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://practicalaico.ai/guides/gemini-in-gmail-what-it-can-do</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
