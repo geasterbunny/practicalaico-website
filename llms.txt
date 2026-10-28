@@ -13,6 +13,7 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 All of these: https://practicalaico.ai/services/
 <!-- SERVICES:START -->
+- [Website not showing on Google? Here's how to find out why.](https://practicalaico.ai/services/website-not-showing-on-google): Why your website isn't showing on Google: six common causes, how to check each one yourself in Search Console, and when an audit (from A$490) is worth it.
 - [How much does a small business website cost in Australia? Count three years, not day one.](https://practicalaico.ai/services/small-business-website-cost-australia): Real 2026 ranges for a small business website in Australia: DIY builders, freelancers, agencies and the monthly fees after launch. Ours is from A$1,490.
 - [Do tradies need a website if they have Facebook? Not always. Here's how to tell.](https://practicalaico.ai/services/do-tradies-need-a-website): Facebook page or a website? The honest answer for tradies: who finds you, what you own, and a 5-minute test. Website Build from A$1,490, yours outright.
 - [A website for tradies that does one job: gets the phone ringing.](https://practicalaico.ai/services/website-for-tradies): What a Sydney tradie website actually needs, what it doesn't, and what it costs. Five pages, yours outright, from A$1,490 fixed price.
