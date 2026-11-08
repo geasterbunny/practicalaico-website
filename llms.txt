@@ -13,6 +13,7 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 All of these: https://practicalaico.ai/services/
 <!-- SERVICES:START -->
+- [A website for plumbers that works for the burst pipe and the bathroom reno.](https://practicalaico.ai/services/website-for-plumbers): A website for plumbers that works for the 2am burst pipe and the planned hot water swap: tap-to-call, service areas, licence shown. From A$1,490 fixed.
 - [AI receptionist vs answering service: which one suits your calls?](https://practicalaico.ai/services/ai-receptionist-vs-answering-service): AI receptionist vs answering service for Australian small business: costs, hours, how each fails, and when a person wins. Ours from A$1,290 + A$290/month.
 - [A chatbot for your small business website that only says what you'd say.](https://practicalaico.ai/services/chatbot-for-small-business): A website chatbot for Australian small businesses, trained on your own pages and prices, with approval on anything that commits you. From A$790 + A$190/month.
 - [Website not showing on Google? Here's how to find out why.](https://practicalaico.ai/services/website-not-showing-on-google): Why your website isn't showing on Google: six common causes, how to check each one yourself in Search Console, and when an audit (from A$490) is worth it.
