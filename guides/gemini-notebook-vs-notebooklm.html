@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Notebook vs NotebookLM: Same Tool, New Name, and How to Use It at Work — The Practical AI Co.</title>
+  <meta name="description" content="Gemini Notebook is the new name for NotebookLM. What changed, what stayed the same, what the free limits are, and how to use it for work documents.">
+  <meta name="keywords" content="gemini notebook, gemini notebook vs notebooklm, notebooklm renamed, gemini notebook pricing, how to use gemini notebook">
+  <link rel="canonical" href="https://practicalaico.ai/guides/gemini-notebook-vs-notebooklm">
+  <meta property="og:title" content="Gemini Notebook vs NotebookLM: Same Tool, New Name, and How to Use It at Work">
+  <meta property="og:description" content="Gemini Notebook is the new name for NotebookLM. What changed, what stayed the same, what the free limits are, and how to use it for work documents.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://practicalaico.ai/guides/gemini-notebook-vs-notebooklm">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Gemini Notebook vs NotebookLM: Same Tool, New Name, and How to Use It at Work",
+    "description": "Gemini Notebook is the new name for NotebookLM. What changed, what stayed the same, what the free limits are, and how to use it for work documents.",
+    "author": {
+      "@type": "Organization",
+      "name": "The Practical AI Co.",
+      "url": "https://practicalaico.ai"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Practical AI Co.",
+      "url": "https://practicalaico.ai"
+    },
+    "datePublished": "2026-11-08",
+    "dateModified": "2026-11-08",
+    "mainEntityOfPage": "https://practicalaico.ai/guides/gemini-notebook-vs-notebooklm",
+    "url": "https://practicalaico.ai/guides/gemini-notebook-vs-notebooklm",
+    "@id": "https://practicalaico.ai/guides/gemini-notebook-vs-notebooklm"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0B1220;--bg-card:#111b2e;--text:#e2e8f0;--text-muted:#94a3b8;--text-heading:#f1f5f9;--teal:#14B8A6;--cyan:#0EA5E9;--orange:#F97316;--gradient:linear-gradient(135deg,#14B8A6,#0EA5E9);--border:rgba(148,163,184,0.1);--max-w:720px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'DM Sans',-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:17px;-webkit-font-smoothing:antialiased}nav{position:sticky;top:0;z-index:100;background:rgba(11,18,32,0.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:.9rem 1.5rem}.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}.nav-logo{font-weight:700;font-size:1.05rem;color:var(--text-heading);text-decoration:none}.nav-logo em{font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent}.nav-links{display:flex;gap:1.6rem;align-items:center}.nav-links a{color:var(--text-muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}.nav-links a:hover{color:var(--text)}.nav-cta{background:var(--gradient);color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600;font-size:.82rem!important}.article-container{max-width:var(--max-w);margin:0 auto;padding:3rem 1.5rem 5rem}.article-meta{display:flex;align-items:center;gap:1rem;margin-bottom:1.8rem;flex-wrap:wrap}.meta-tag{background:rgba(14,165,233,0.12);color:var(--cyan);padding:.25rem .75rem;border-radius:20px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.05em}.meta-date,.meta-read{color:var(--text-muted);font-size:.82rem}.article-title{font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:700;color:var(--text-heading);line-height:1.2;margin-bottom:1.2rem}.article-subtitle{font-size:1.1rem;color:var(--text-muted);line-height:1.6;margin-bottom:2.5rem;border-left:3px solid var(--teal);padding-left:1rem}.article-body h2{font-size:1.35rem;font-weight:700;color:var(--text-heading);margin:2.5rem 0 .8rem;line-height:1.3}.article-body h3{font-size:1.1rem;font-weight:600;color:var(--text-heading);margin:2rem 0 .6rem}.article-body p{margin-bottom:1.2rem}.article-body strong{color:var(--text-heading);font-weight:600}.prompt-block{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--teal);border-radius:8px;padding:1.2rem 1.4rem;margin:1.5rem 0;font-family:'Space Mono',monospace;font-size:.85rem;line-height:1.7;white-space:pre-wrap}.tip-block{background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.2);border-radius:10px;padding:1.3rem 1.5rem;margin:2rem 0}.tip-block .tip-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--orange);margin-bottom:.5rem}.product-cta{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:1.8rem;margin:2.5rem 0;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}.product-cta-text{flex:1;min-width:200px}.product-cta-text h4{font-size:1rem;font-weight:700;color:var(--text-heading);margin-bottom:.3rem}.product-cta-text p{font-size:.88rem;color:var(--text-muted);margin:0}.product-cta-btn{background:var(--gradient);color:#fff;text-decoration:none;padding:.7rem 1.5rem;border-radius:8px;font-weight:600;font-size:.9rem;white-space:nowrap;transition:opacity .2s}.product-cta-btn:hover{opacity:.9}.guide-nav{display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);flex-wrap:wrap}.guide-nav a{color:var(--text-muted);text-decoration:none;font-size:.88rem;transition:color .2s}.guide-nav a:hover{color:var(--teal)}.guide-nav .nav-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);opacity:.6;display:block;margin-bottom:.2rem}.back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--text-muted);text-decoration:none;font-size:.85rem;margin-bottom:2rem;transition:color .2s}.back-link:hover{color:var(--teal)}footer{border-top:1px solid var(--border);padding:2rem 1.5rem;text-align:center;color:var(--text-muted);font-size:.8rem}footer a{color:var(--text-muted);text-decoration:none}footer a:hover{color:var(--text)}@media(max-width:640px){.article-container{padding:2rem 1rem 3rem}.product-cta{flex-direction:column;align-items:stretch;text-align:center}.nav-links{gap:.8rem}}
+  </style>
+
+</head>
+<body>
+<nav><div class="nav-inner"><a href="https://practicalaico.ai/" class="nav-logo">The Practical <em>AI</em> Co.</a><div class="nav-links"><a href="https://practicalaico.ai/#build">Services</a><a href="https://practicalaico.ai/websites">Websites</a><a href="https://practicalaico.ai/guides/">Guides</a><a href="https://practicalaico.ai/newsletter">Newsletter</a><a href="https://practicalaico.ai/#start" class="nav-cta">Start a Project</a></div></div></nav>
+<article class="article-container">
+  <a href="https://practicalaico.ai/guides/" class="back-link">← All Guides</a>
+  <div class="article-meta">
+    <span class="meta-tag">Gemini</span>
+    <span class="meta-date">November 2026</span>
+    <span class="meta-read">4 min read</span>
+  </div>
+  <h1 class="article-title">Gemini Notebook vs NotebookLM: Same Tool, New Name, and How to Use It at Work</h1>
+  <p class="article-subtitle">NotebookLM is now called Gemini Notebook. It's the same product, and your notebooks are safe. Here's what changed, what you get for free, and how to set up your first one for a real work job.</p>
+  <div class="article-body">
+
+    <p>If you've searched "gemini notebook" and wondered how it differs from NotebookLM, here's the answer: it doesn't. Google renamed NotebookLM to Gemini Notebook on 16 July 2026. Google describes it as the same standalone product, and existing shared notebooks and links keep working through automatic redirects.</p>
+    <p>If you've been putting off trying it, this is a good moment, because it remains one of the most useful AI tools for office work. It answers from the documents you give it, which is exactly what you want when the facts matter.</p>
+
+    <h2>What actually changed</h2>
+    <p><strong>The name and logo.</strong> The old notebooklm.google address now redirects to notebook.google. Mobile users may need to update the app.</p>
+    <p><strong>Notebooks in the Gemini app.</strong> You can open and create notebooks inside the Gemini app, and they sync with the standalone product.</p>
+    <p><strong>Deeper data analysis on some plans.</strong> Google has been adding the ability to run calculations over your sources, starting with higher-tier plans. Don't worry if you don't see it.</p>
+    <p>Everything else you may have read about, such as Audio Overviews, mind maps and slide decks, is still in the Studio panel.</p>
+
+    <h2>Why it's different from a normal chatbot</h2>
+    <p>A notebook is a collection of sources for one project: reports, PDFs, Google Docs, Slides, Sheets, Word files, web links, even audio. When you ask a question, it answers from those sources. If the answer isn't in them, it says so instead of filling the gap, and that's the behaviour you want for anything you'll put your name to.</p>
+    <p>One thing to remember: each notebook is independent. It can't look across several notebooks at once, so keep everything for a project in one place.</p>
+
+    <h2>Set up your first notebook</h2>
+    <p>Go to notebook.google and sign in. Select <strong>Create new notebook</strong>, then <strong>Upload a source</strong> and add your files. The Chat panel shows a generated summary of everything you've added, and you can ask questions straight away. The Studio panel is where you make outputs such as reports, including a briefing document or FAQ, which you can export to Google Docs from the three-dots menu.</p>
+    <p>Start with a job that has a clear end point. Here's a good first question once your sources are in:</p>
+    <div class="prompt-block">Using only these sources, write a one-page briefing for someone joining this project tomorrow.
+Include: what the project is, the decisions made so far, the open questions, and the key dates.
+Note where sources disagree with each other, and tell me if anything I'd expect to find is missing.</div>
+    <p>Follow up with something you already know the answer to. If the tool gets that right and points to the right place in your documents, you'll have a much better feel for how far to trust it.</p>
+
+    <h2>What it costs and what the limits are</h2>
+    <p>There's a free version. Free users can add up to 50 sources per notebook. Paid Google AI plans raise that: Google lists 100 on AI Plus, 300 on AI Pro and 600 on AI Ultra. A single source can be up to 500,000 words or 200 MB. Google marks its limits as subject to change, so check the current table in Gemini Notebook Help if you're close to a limit.</p>
+    <p>For work accounts, most people with a work Google account already have access. Gemini Notebook is a core service on most Workspace plans, which means your administrator may need to have it switched on. If you can't get in with your work email, that's the first thing to ask about. Higher limits on work accounts come from your organisation's Workspace plan.</p>
+
+    <div class="tip-block">
+      <div class="tip-label">💡 Use your work account for work documents</div>
+      <p>Google says the work editions with enterprise-grade protection don't send your uploaded files, chats and outputs to human reviewers or use them to improve its AI models. What you get depends on your licence, so check with your administrator, and don't put company documents in a personal account.</p>
+    </div>
+
+    <h2>What it's good for at work</h2>
+    <p><strong>Getting across a long document.</strong> Add a 60-page report and ask for the five things your team needs to act on.</p>
+    <p><strong>Policy questions.</strong> Add your policies and ask a specific question. Sharing the notebook with colleagues doesn't change anyone's source limit, but remember that anyone you share with can see those sources.</p>
+    <p><strong>Project handovers.</strong> Keep the plan, meeting notes and decisions in one notebook, then ask for a summary when someone new joins.</p>
+    <p><strong>Slides from your own material.</strong> Our guide covers this in detail: <a href="notebooklm-slide-deck-from-your-documents">how to make a slide deck from your own documents</a>.</p>
+
+    <h2>Try it this week</h2>
+    <p>Choose one project you're working on and put its three most useful documents into a new notebook. Use the briefing prompt above, then check every date and decision against the originals. If it saves you a read-through, make that notebook your first stop for questions about the project.</p>
+  </div>
+  <div class="product-cta">
+    <div class="product-cta-text">
+      <h4>AI Fundamentals & Practical Tools</h4>
+      <p>Go deeper with the full guide — instant download, no jargon. A$79.00</p>
+    </div>
+    <a href="https://payhip.com/b/XVCYm" class="product-cta-btn" target="_blank">Get It Now ↗</a>
+  </div>
+  <div class="guide-nav">
+    <a href="notebooklm-slide-deck-from-your-documents"><span class="nav-label">← Previous</span>How to Make a NotebookLM Slide Deck From Your Own Documents</a>
+    <a href="pdf-to-one-page-brief" style="text-align:right;margin-left:auto"><span class="nav-label">Next →</span>Turn a 40-Page PDF Into a One-Page Brief You Can Trust</a>
+  </div>
+
+<div class="nl-cta-wrap">
+  <style>.nl-cta-wrap{margin-top:3rem;padding:2rem 2rem 1.8rem;background:rgba(20,184,166,0.07);border:1px solid rgba(20,184,166,0.2);border-radius:14px;text-align:center}.nl-cta-wrap .nl-tag{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#14B8A6;margin-bottom:.5rem}.nl-cta-wrap h3{font-size:1.15rem;font-weight:700;color:#f1f5f9;margin:.4rem 0 .5rem}.nl-cta-wrap>p{font-size:.88rem;color:#94a3b8;margin:0 0 1.2rem}.nl-cta-form{display:flex;gap:.6rem;max-width:420px;margin:0 auto .8rem;flex-wrap:wrap}.nl-cta-form input{flex:1;min-width:190px;background:#0d1f3c;color:#fff;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none}.nl-cta-form input::placeholder{color:rgba(255,255,255,0.35)}.nl-cta-form input:focus{border-color:rgba(20,184,166,0.5)}.nl-cta-form button{background:linear-gradient(135deg,#14B8A6,#0EA5E9);color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:.88rem;font-weight:700;cursor:pointer;white-space:nowrap;font-family:inherit;transition:opacity .2s}.nl-cta-form button:hover{opacity:.9}.nl-cta-success{display:none;color:#14B8A6;font-weight:600;font-size:.92rem;margin:.6rem 0 0}.nl-cta-note{font-size:.74rem;color:#475569;margin:.5rem 0 0}@media(max-width:480px){.nl-cta-form{flex-direction:column}.nl-cta-form input,.nl-cta-form button{width:100%}}</style>
+  <div class="nl-tag">FREE WEEKLY NEWSLETTER</div>
+  <h3>One practical AI tip, every week</h3>
+  <p>Join office workers staying ahead on AI. Free Beginners Guide included on signup. 3 minutes to read.</p>
+  <form class="nl-cta-form" id="nlCtaForm" novalidate>
+    <input type="email" id="nlCtaEmail" placeholder="your@email.com" required autocomplete="email">
+    <button type="submit">Subscribe Free ↗</button>
+  </form>
+  <p class="nl-cta-success" id="nlCtaSuccess">✓ You're in! Check your inbox for the free guide.</p>
+  <p class="nl-cta-note">No spam. Unsubscribe anytime.</p>
+</div>
+<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
+</article>
+
+<div class="product-cta" style="border-left:3px solid var(--teal)">
+  <div class="product-cta-text">
+    <h4>Rather not do it by hand?</h4>
+    <p>We build the systems that do this work for you &mdash; and FRANK, the operations core that runs the business side of your business. Early access is open. Need a site that brings the work in? <a href="https://practicalaico.ai/websites" style="color:var(--teal)">Small-business websites, fixed price, Sydney</a>.</p>
+  </div>
+  <a href="https://practicalaico.ai/#frank" class="product-cta-btn">Meet FRANK &rarr;</a>
+</div>
+
+<footer><p>© 2026 The Practical AI Co. All rights reserved.</p><p style="margin-top:.5rem"><a href="https://practicalaico.ai/privacy">Privacy Policy</a> · <a href="https://practicalaico.ai/terms">Terms</a> · <a href="https://practicalaico.ai/faq">FAQ</a></p></footer>
+</body>
+</html>
