@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://practicalaico.ai/newsletter</loc>
-    <lastmod>2026-11-08</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -387,6 +387,18 @@
   <url>
     <loc>https://practicalaico.ai/guides/claude-cowork-what-it-does</loc>
     <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://practicalaico.ai/guides/microsoft-365-outage-what-to-do</loc>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://practicalaico.ai/guides/copilot-chat-usage-limit-what-to-do</loc>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
