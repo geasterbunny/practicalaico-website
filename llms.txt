@@ -13,6 +13,7 @@ The Practical AI Co. is an Australian automation studio for small businesses: ca
 
 All of these: https://practicalaico.ai/services/
 <!-- SERVICES:START -->
+- [An AI answering service for electricians that gets the details before you ring back.](https://practicalaico.ai/services/ai-receptionist-for-electricians): AI answering service for Australian electricians: answers 24/7, sorts urgent faults from quote calls by your rules, texts you the job details. From A$1,290 + A$290/month.
 - [A website for electricians that wins the home job and the commercial contract.](https://practicalaico.ai/services/website-for-electricians): Website for Australian electricians: tap-to-call, licence details shown, separate paths for home and commercial work, set up for local search. From A$1,490 fixed.
 - [An AI receptionist for plumbers that knows a burst pipe from a dripping tap.](https://practicalaico.ai/services/ai-receptionist-for-plumbers): AI receptionist for Australian plumbers: answers 24/7, sorts burst pipes from routine jobs by your rules, texts you every call. From A$1,290 + A$290/month.
 - [A website for plumbers that works for the burst pipe and the bathroom reno.](https://practicalaico.ai/services/website-for-plumbers): A website for plumbers that works for the 2am burst pipe and the planned hot water swap: tap-to-call, service areas, licence shown. From A$1,490 fixed.
