@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://practicalaico.ai/newsletter</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -441,6 +441,18 @@
   <url>
     <loc>https://practicalaico.ai/services/ai-receptionist-for-electricians</loc>
     <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://practicalaico.ai/guides/chatgpt-voice-changes-december-11</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://practicalaico.ai/guides/chatgpt-work-vs-chat-usage-limits</loc>
+    <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
