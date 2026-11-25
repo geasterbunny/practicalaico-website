@@ -975,13 +975,14 @@ Create:
     const orig = btn.textContent;
     const d = new FormData();
     d.append('fields[email]', email);
+    d.append('fields[signup_source]', 'newsletter');
     d.append('ml-submit', '1');
     d.append('anticsrf', 'true');
-    fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe', { method: 'POST', body: d, mode: 'no-cors' })
+    fetch('https://assets.mailerlite.com/jsonp/2264386/forms/197591117195117835/subscribe', { method: 'POST', body: d, mode: 'no-cors' })
       .finally(() => {
-        btn.textContent = "✓ You're in!";
+        btn.textContent = "✓ Check your inbox to confirm";
         btn.style.background = '#14B8A6';
-        setTimeout(() => { btn.textContent = orig; btn.style.background = ''; form.reset(); }, 3000);
+        setTimeout(() => { btn.textContent = orig; btn.style.background = ''; form.reset(); }, 8000);
       });
   });
 });

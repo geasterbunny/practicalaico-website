@@ -104,10 +104,10 @@ If you're not sure, use Other. Do not invent new categories.</div>
     <input type="email" id="nlCtaEmail" placeholder="your@email.com" required autocomplete="email">
     <button type="submit">Subscribe Free ↗</button>
   </form>
-  <p class="nl-cta-success" id="nlCtaSuccess">✓ You're in! Check your inbox for the free guide.</p>
+  <p class="nl-cta-success" id="nlCtaSuccess">✓ Nearly done. Check your inbox and confirm your email to join.</p>
   <p class="nl-cta-note">No spam. Unsubscribe anytime.</p>
 </div>
-<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264400/forms/184717372975744391/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
+<script>(function(){var f=document.getElementById('nlCtaForm');if(!f)return;f.addEventListener('submit',function(e){e.preventDefault();var em=document.getElementById('nlCtaEmail').value;if(!em)return;var d=new FormData();d.append('fields[email]',em);d.append('fields[signup_source]','newsletter');d.append('ml-submit','1');d.append('anticsrf','true');fetch('https://assets.mailerlite.com/jsonp/2264386/forms/197591117195117835/subscribe',{method:'POST',body:d,mode:'no-cors'}).then(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';}).catch(function(){f.style.display='none';document.getElementById('nlCtaSuccess').style.display='block';});});}());</script>
 </article>
 <div class="product-cta" style="border-left:3px solid var(--teal)">
   <div class="product-cta-text">
