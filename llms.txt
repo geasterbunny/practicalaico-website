@@ -1,8 +1,8 @@
 # The Practical AI Co.
 
-> The Practical AI Co. builds done-for-you AI automation for small businesses — social content pipelines, product listing engines, and back-office follow-up systems — delivered working at fixed prices, with human approval on everything the automation sends or publishes. Based in Australia. We also publish free plain-English guides and a weekly newsletter teaching practical AI to non-technical professionals.
+> The Practical AI Co. builds websites and done-for-you AI automation for small businesses — websites that bring the work in, chatbots, AI phone assistants, follow-up systems, social content pipelines and product listing engines — delivered working at fixed prices, with human approval on everything the automation sends or publishes. Based in Australia. We also publish free plain-English guides and a weekly newsletter teaching practical AI to non-technical professionals.
 
-The Practical AI Co. is an Australian automation studio for small businesses: cafés, trades, boutiques, online sellers, solo operators and small teams. Every system we sell is one we first built and ran on our own businesses. No sales calls — projects start with one email, or a conversation with Frank on the site, describing the task the owner wants automated, and we reply with a fixed-price scope.
+The Practical AI Co. is an Australian studio building websites and automation for small businesses: cafés, trades, boutiques, online sellers, solo operators and small teams. Every system we sell is one we first built and ran on our own businesses. No sales calls — projects start with one email, or a conversation with Frank on the site, describing the task the owner wants automated, and we reply with a fixed-price scope.
 
 ## Websites
 
@@ -58,7 +58,7 @@ Every system we ship holds anything that sends, spends or publishes in a queue u
 
 ## Free Resources
 
-- 25+ free plain-English guides on using ChatGPT, Claude, Gemini and Microsoft Copilot at work: https://practicalaico.ai/guides/
+- 50+ free plain-English guides on using ChatGPT, Claude, Gemini and Microsoft Copilot at work: https://practicalaico.ai/guides/
 - Free weekly newsletter with practical AI tips (3-minute reads): https://practicalaico.ai/newsletter.html
 
 ## Topics We Cover
