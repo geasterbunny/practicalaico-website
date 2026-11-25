@@ -13,6 +13,7 @@ The Practical AI Co. is an Australian studio building websites and automation fo
 
 All of these: https://practicalaico.ai/services/
 <!-- SERVICES:START -->
+- [A website for builders and renovators that shows the job and sorts the enquiry.](https://practicalaico.ai/services/website-for-builders): Website for Australian builders and renovators: projects shown properly, before and afters, an enquiry form that sorts leads. From A$1,490 fixed.
 - [Automate your quote follow-ups without losing the say on what gets sent.](https://practicalaico.ai/services/automate-quote-follow-ups): Automate quote follow-ups for your small business: every quiet quote gets a drafted nudge, held for your one-tap approval. From A$1,490 + A$490/month.
 - [An AI answering service for electricians that gets the details before you ring back.](https://practicalaico.ai/services/ai-receptionist-for-electricians): AI answering service for Australian electricians: answers 24/7, sorts urgent faults from quote calls by your rules, texts you the job details. From A$1,290 + A$290/month.
 - [A website for electricians that wins the home job and the commercial contract.](https://practicalaico.ai/services/website-for-electricians): Website for Australian electricians: tap-to-call, licence details shown, separate paths for home and commercial work, set up for local search. From A$1,490 fixed.
