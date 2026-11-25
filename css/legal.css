@@ -345,6 +345,10 @@
   margin-bottom: 24px;
 }
 
+@media (max-width: 400px) {
+  .subscribe-bar a.btn { max-width: 100%; padding: 14px 16px; justify-content: center; white-space: normal; }
+}
+
 .subscribe-bar .email-form {
   max-width: 480px;
   margin: 0 auto;

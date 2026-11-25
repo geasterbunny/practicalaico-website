@@ -297,12 +297,16 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 /* ===================== MOBILE NAV ===================== */
-document.getElementById('navToggle').addEventListener('click', () => {
-  document.getElementById('navLinks').classList.toggle('open');
-});
-document.querySelectorAll('#navLinks a').forEach(a => {
-  a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'));
-});
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+if (navToggle && navLinks) {
+  const setMenu = open => {
+    navLinks.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+  };
+  navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+}
 
 /* ===================== SCROLL REVEAL ===================== */
 const revealObs = new IntersectionObserver((entries) => {
