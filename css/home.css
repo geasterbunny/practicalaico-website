@@ -188,6 +188,12 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px
   transition:background .2s,color .2s
 }
 .nav-cta:hover{background:var(--teal);color:var(--navy)}
+.nav-act{display:flex;align-items:center;gap:16px}
+.nav-tel{font-family:var(--mono);font-size:12px;letter-spacing:.06em;font-weight:700;color:var(--white);white-space:nowrap}
+.nav-tel:hover{color:var(--teal)}
+.card li a,footer a[href^="tel:"]{color:var(--teal)}
+/* The homepage nav is already full on desktop (6 links, plus the HUD at 1240px+); its number shows on phones and tablets. */
+@media(min-width:901px){.nav-tel-m{display:none}}
 
 section{padding:clamp(90px,13vh,150px) 0;position:relative}
 .eyebrow{
@@ -403,6 +409,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .brand{font-size:14px;gap:9px}
   .mark{width:22px;height:22px}
   .nav-cta{font-size:10px;padding:9px 12px}
+  .nav-act{gap:12px}
+  .nav-tel{font-size:11px}
   nav{padding:30px 0 18px}
   .bloom{width:96vmax;height:96vmax}
 }
@@ -442,3 +450,7 @@ html.js .backronym.in b{animation:lit .55s cubic-bezier(.2,.7,.3,1) both;animati
 html:not(.js) .backronym b{opacity:1;transform:none}
 @keyframes lit{to{opacity:1;transform:none;text-shadow:0 0 18px rgba(20,184,166,.45)}}
 @media(max-width:900px){.backronym{gap:6px 18px;font-size:11px}.backronym b{font-size:1.25rem}}
+
+/* Narrow phones: the link reads CALL; screen readers still get the number. */
+@media(max-width:480px){.nav-tel{font-size:0;letter-spacing:0}.nav-tel::before{content:"CALL";font-size:11px;letter-spacing:.1em}}
+@media(min-width:360px) and (max-width:480px){.nav-act{gap:10px}.nav-cta{white-space:nowrap}}

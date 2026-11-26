@@ -53,7 +53,7 @@ Every system we ship holds anything that sends, spends or publishes in a queue u
 
 ## How It Works
 
-1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalaico.ai, or describe it to Frank in the chat/voice widget on the site
+1. Email the task you want automated (plain English, screenshots welcome) to hello@practicalaico.ai, describe it to Frank in the chat/voice widget on the site, or ring Frank on 0485 081 588 (+61 485 081 588)
 2. We build the automation and demo it running on your real work before you pay the balance
 3. The system runs on schedule with one-tap approvals; first month of monitoring and tuning included
 
@@ -80,3 +80,4 @@ Every system we ship holds anything that sends, spends or publishes in a queue u
 - Customers: Small businesses, solo operators and small teams
 - Newsletter: Free weekly AI tips
 - Contact: hello@practicalaico.ai
+- Phone: 0485 081 588 (+61 485 081 588). Frank, our AI front desk agent, answers 24/7; it is also a live demo of the AI Phone Assistant.
